@@ -24,51 +24,6 @@ p {
 }
 
 
-/*---------Footer--------*/
-
-.footergrid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 40px;
-    grid-auto-rows: minmax(100px, auto);
-}
-
-.footercontact {
-    grid-column: 1/4;
-    grid-row: 1;
-    border: 2px solid black;
-}
-
-.footercollection {
-    grid-column: 2/4;
-    grid-row: 1;
-    border: 2px solid black;
-}
-
-.footerinfo {
-    grid-column: 3/4;
-    grid-row: 1;
-    border: 2px solid black;
-}
-
-.footertouch {
-    grid-column: 4/4;
-    grid-row: 1;
-    border: 2px solid black;
-}
-
-
-/*---footer overskrift---*/
-
-h1 {
-    margin: 10px;
-}
-
-h3 {
-    margin: 10px;
-}
-
-
 /*-----MENU STYLING START-------*/
 
 a {
