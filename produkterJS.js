@@ -14,7 +14,7 @@
 
         //hent Json fra Wordpress Rest API
         async function hentWpData() {
-            let wpData = await fetch("http://simonepoulsen.dk/kea/2semester/wordpress/wp-json/wp/v2/products");
+            let wpData = await fetch("http://simonepoulsen.dk/kea/2semester/wordpress/wp-json/wp/v2/products?per_page=100");
             //vis objekt som Json
             produkter = await wpData.json();
             visProdukter();
