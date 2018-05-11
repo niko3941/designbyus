@@ -40,9 +40,6 @@
         }
 
 
-
-
-
         //Footer fra footer.html hentes
         async function hentFooter() {
             let footer = await fetch("footer.html");
