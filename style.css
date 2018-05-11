@@ -28,31 +28,31 @@ p {
 
 .footergrid {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px;
     grid-auto-rows: minmax(100px, auto);
 }
 
 .footercontact {
-    grid-column: 2/8;
+    grid-column: 1/4;
     grid-row: 1;
     border: 2px solid black;
 }
 
 .footercollection {
-    grid-column: 4/8;
+    grid-column: 2/4;
     grid-row: 1;
     border: 2px solid black;
 }
 
 .footerinfo {
-    grid-column: 6/8;
+    grid-column: 3/4;
     grid-row: 1;
     border: 2px solid black;
 }
 
 .footertouch {
-    grid-column: 8/8;
+    grid-column: 4/4;
     grid-row: 1;
     border: 2px solid black;
 }
@@ -67,6 +67,7 @@ h1 {
 h3 {
     margin: 10px;
 }
+
 
 /*-----MENU STYLING START-------*/
 
@@ -101,8 +102,8 @@ a:hover {
     opacity: 0;
     /* hide this */
     z-index: 2;
-
 }
+
 
 /*
  * Just a quick hamburger
@@ -132,6 +133,7 @@ a:hover {
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
+
 /*
  * Make this absolute positioned
  * at the top left of the screen
@@ -156,12 +158,12 @@ a:hover {
     font-size: 22px;
 }
 
+
 /* And let's slide it in from the left */
 
-#menuToggle input:checked ~ ul {
+#menuToggle input:checked~ul {
     transform: none;
 }
-
 
 
 /*--------------ABOUT MENU I HØJRE SIDE----------*/
@@ -188,6 +190,7 @@ a:hover {
     z-index: 2;
 }
 
+
 /*Just a quick hamburger*/
 
 #menuToggle_about span {
@@ -199,6 +202,7 @@ a:hover {
     border-radius: 3px;
     z-index: 1;
 }
+
 
 /*Make this absolute positioned
     at the top left of the screen*/
@@ -223,9 +227,10 @@ a:hover {
     font-size: 22px;
 }
 
+
 /*And let's slide it in from the left*/
 
-#menuToggle_about input:checked ~ ul {
+#menuToggle_about input:checked~ul {
     transform: none;
-    > > > > > > > origin/master
+    >>>>>>>origin/master
 }
