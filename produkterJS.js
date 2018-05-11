@@ -2,7 +2,7 @@
         async function hentMenu() {
             let topMenu = await fetch("navigation.html");
             let menu = await topMenu.text();
-            //document.querySelector("[data-navigation]").innerHTML = menu;
+            document.querySelector("[data-navigation]").innerHTML = menu;
         }
 
         let produkter;
