@@ -22,7 +22,10 @@
 
         //lav en klon af template
         function visProdukter() {
+
+
             produkter.forEach(produkt => {
+
                 let klon = produktTemplate.cloneNode(true).content;
                 klon.querySelector("[data-produktpic]").src = produkt.acf.main_photo.url;
                 klon.querySelector("[data-produktnavn]").textContent = produkt.acf.product_name;
@@ -35,6 +38,8 @@
                 templateModtager.appendChild(klon);
             })
         }
+
+
 
 
 
