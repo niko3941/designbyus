@@ -24,7 +24,6 @@ p {
 }
 
 
-<<<<<<< HEAD
 /*---------Footer--------*/
 
 .footergrid {
@@ -67,7 +66,8 @@ h1 {
 
 h3 {
     margin: 10px;
-=======
+}
+
 /*-----MENU STYLING START-------*/
 
 a {
@@ -227,5 +227,5 @@ a:hover {
 
 #menuToggle_about input:checked ~ ul {
     transform: none;
->>>>>>> origin/master
+    > > > > > > > origin/master
 }
