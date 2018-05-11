@@ -22,3 +22,48 @@ h2 {
 p {
     margin: 10px;
 }
+
+
+/*---------Footer--------*/
+
+.footergrid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 40px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.footercontact {
+    grid-column: 2/8;
+    grid-row: 1;
+    border: 2px solid black;
+}
+
+.footercollection {
+    grid-column: 4/8;
+    grid-row: 1;
+    border: 2px solid black;
+}
+
+.footerinfo {
+    grid-column: 6/8;
+    grid-row: 1;
+    border: 2px solid black;
+}
+
+.footertouch {
+    grid-column: 8/8;
+    grid-row: 1;
+    border: 2px solid black;
+}
+
+
+/*---footer overskrift---*/
+
+h1 {
+    margin: 10px;
+}
+
+h3 {
+    margin: 10px;
+}
