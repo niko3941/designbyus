@@ -1,3 +1,24 @@
 img {
     max-width: 300px;
 }
+
+#templateModtager {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 2 / 4;
+    grid-row: 2;
+    grid-gap: 40px;
+}
+
+article {
+    border: 2px solid black;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+p {
+    margin: 10px;
+}
