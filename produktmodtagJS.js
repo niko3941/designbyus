@@ -22,6 +22,15 @@ async function hentJson() {
     document.querySelector("[data-produktfarve]").innerHTML = single.acf.color;
 }
 
+//Footer fra footer.html hentes
+async function hentFooter() {
+    let footer = await fetch("footer.html");
+    let footerIndhold = await footer.text();
+
+    document.querySelector("[data-footer]").innerHTML = footerIndhold;
+}
+
 //hent alt indhold når siden er loaded
 document.addEventListener("DOMContentLoaded", hentMenu);
 document.addEventListener("DOMContentLoaded", hentJson);
+document.addEventListener("DOMContentLoaded", hentFooter);

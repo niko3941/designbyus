@@ -9,7 +9,7 @@ async function hentMenu() {
 async function hentFooter() {
     let footer = await fetch("footer.html");
     let footerIndhold = await footer.text();
-    //document.querySelector("[data-footer]").innerHTML = footerIndhold;
+    document.querySelector("[data-footer]").innerHTML = footerIndhold;
 }
 
 //hent alt indhold når siden er loaded

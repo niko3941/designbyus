@@ -4,7 +4,7 @@ async function hentMenu() {
     let menu = await topMenu.text();
     document.querySelector("[data-navigation]").innerHTML = menu;
 }
-/*
+
 
 
 //HENT ANSATTE TIL ABOUT SIDEN
@@ -41,11 +41,10 @@ function visAnsatte() {
 async function hentFooter() {
     let footer = await fetch("footer.html");
     let footerIndhold = await footer.text();
-    //document.querySelector("[data-footer]").innerHTML = footerIndhold;
+    document.querySelector("[data-footer]").innerHTML = footerIndhold;
 }
-*/
+
 //Hent indhold når siden er loaded
 document.addEventListener("DOMContentLoaded", hentMenu);
-
-//document.addEventListener("DOMContentLoaded", hentWpData);
-//document.addEventListener("DOMContentLoaded", hentFooter);
+document.addEventListener("DOMContentLoaded", hentWpData);
+document.addEventListener("DOMContentLoaded", hentFooter);
