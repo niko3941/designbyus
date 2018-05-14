@@ -9,25 +9,24 @@
 
         <!-- Too bad the menu has to be inside of the button but hey, it's pure CSS magic.-->
         <ul id="menu">
-            <a href="produkter.html">
+            <a href="javascript: visAllProducts();">
                 <li>All Products</li>
             </a>
-            <a href="#">
-                <li>Lighting</li>
+            <a href="javascript: visLightning();">
+                <li> - Lighting</li>
             </a>
-            <a href="#">
-                <li>Seating</li>
+            <a href="javascript: visSeating();">
+                <li> - Seating</li>
             </a>
-            <a href="#">
-                <li>Tables</li>
+            <a href="javascript: visTables();">
+                <li> - Tables</li>
             </a>
-            <a href="#">
-                <li>Various</li>
+            <a href="javascript: visVarious();">
+                <li> - Various</li>
             </a>
         </ul>
     </div>
 </nav>
-
 
 <nav id="about_menu">
     <div id="menuToggle_about">
@@ -58,3 +57,5 @@
         </ul>
     </div>
 </nav>
+
+<script src="navigationJS.js"></script>
