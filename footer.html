@@ -45,18 +45,20 @@
 
 </div>
 
-<div id="footer_bund">
-    <div class="footer_bund_content">
-        <p>Copyright 2018 &copy; Design By Us</p>
-    </div>
+<div class="footer_baggrund">
+    <div id="footer_bund">
+        <div class="footer_bund_content">
+            <p>Copyright 2018 &copy; Design By Us</p>
+        </div>
 
-    <div class="footer_bund_content">
-        <img src="img/betalingskort.png" alt="Betalingskort ved køb hos Design By Us">
-    </div>
+        <div class="footer_bund_content">
+            <img src="img/betalingskort.png" class="betalingskort" alt="Betalingskort ved køb hos Design By Us">
+        </div>
 
-    <div class="footer_bund_content">
-        <img src="img/logo_facebook.png" alt="Design By Us facebook">
-        <img src="img/logo_instagram.png" alt="Design By Us Instagram">
+        <div class="footer_bund_content">
+            <img src="img/logo_facebook.png" class="socialmedia" alt="Design By Us facebook">
+            <img src="img/logo_instagram.png" class="socialmedia" alt="Design By Us Instagram">
+        </div>
     </div>
 </div>
 
@@ -65,6 +67,11 @@
 
 <style>
     /*---------Footer--------*/
+
+    .footer_baggrund {
+        width: 100%;
+        background-color: #000;
+    }
 
     .footergrid {
         display: grid;
@@ -80,7 +87,6 @@
     }
 
     #footer_bund {
-        background-color: #000;
         color: #FFF;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -91,6 +97,11 @@
 
     li {
         text-decoration: none;
+    }
+
+    .socialmedia {
+        float: right;
+        width: 33px;
     }
 
 
