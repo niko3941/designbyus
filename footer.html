@@ -4,58 +4,62 @@
 
     <div class="footercontent">
         <h1>Contact</h1>
+        <p>Design By Us<br> Rentemestervej 43<br> 2400 København NV
+        </p>
         <p>
-            nigga what nigga bla bla hey du der</p>
-
-        <h3>Email</h3>
-
-
-        <p> mail lorem lorem ipsum nksdnfs blab bla </p>
-
+            <a href="mailto:mail@design-by-us.com">mail@design-by-us.com</a>
+        </p>
+        <p>+45 3811 8086</p>
     </div>
 
     <div class="footercontent">
-
-
         <h1>Collection</h1>
-        <p>
-            lightning
-            <br> Seating
-            <br> Tables
-            <br> Various
-            <br>
-        </p>
-
+        <ul>
+            <li>lightning</li>
+            <li>Seating</li>
+            <li>Tables</li>
+            <li>Various</li>
+        </ul>
     </div>
 
     <div class="footercontent">
-
-
         <h1>Information</h1>
-        <p>
-            intirior projects
-            <br> About
-            <br> Contact
-            <br> Become dealer
-            <br> Terms and conditions <br>
-        </p>
+        <ul>
+            <li>Intirior Projects </li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Become Dealer</li>
+            <li>Terms and conditions</li>
+        </ul>
 
     </div>
 
     <div class="footercontent">
-
 
         <h1>Let's stay in touch</h1>
-        <p>
+        <p>Sign up for our newsletter and we’ll keep you updated with all the latest news and exiting information.</p>
 
-            bla bla bla blarbla bla bla blarbla bla bla blarbla bla bla blarbla bla bla blarbla bla bla blarbla bla bla blarbla bla bla blarbla bla bla blarbla bla bla blar</p>
-
-        <h3>Email funktion</h3>
-
-
-
+        <input type="text" name="FirstName" value="Type email">
+        <button type="submit">OK</button>
     </div>
 
+</div>
+
+<div class="footer_baggrund">
+    <div id="footer_bund">
+        <div class="footer_bund_content">
+            <p>Copyright 2018 &copy; Design By Us</p>
+        </div>
+
+        <div class="footer_bund_content">
+            <img src="img/betalingskort.png" class="betalingskort" alt="Betalingskort ved køb hos Design By Us">
+        </div>
+
+        <div class="footer_bund_content">
+            <img src="img/logo_facebook.png" class="socialmedia" alt="Design By Us facebook">
+            <img src="img/logo_instagram.png" class="socialmedia" alt="Design By Us Instagram">
+        </div>
+    </div>
 </div>
 
 
@@ -64,16 +68,40 @@
 <style>
     /*---------Footer--------*/
 
+    .footer_baggrund {
+        width: 100%;
+        background-color: #000;
+    }
+
     .footergrid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        max-width: 1000px;
+        max-width: 90%;
         margin: 0 auto;
         grid-gap: 5px;
     }
 
-    .footercontent {
+    .footercontent,
+    .footer_bund_content {
         padding: 10px;
+    }
+
+    #footer_bund {
+        color: #FFF;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 100%;
+        margin: 0 auto;
+        grid-gap: 5px;
+    }
+
+    li {
+        text-decoration: none;
+    }
+
+    .socialmedia {
+        float: right;
+        width: 33px;
     }
 
 

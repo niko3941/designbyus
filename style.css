@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 img {
     max-width: 300px;
 }
@@ -116,7 +120,7 @@ a:hover {
 
 /* And let's slide it in from the left */
 
-#menuToggle input:checked~ul {
+#menuToggle input:checked ~ ul {
     transform: none;
 }
 
@@ -185,6 +189,6 @@ a:hover {
 
 /*And let's slide it in from the left*/
 
-#menuToggle_about input:checked~ul {
+#menuToggle_about input:checked ~ ul {
     transform: none;
 }
