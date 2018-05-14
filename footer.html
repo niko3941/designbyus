@@ -1,8 +1,8 @@
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="">
 <div class="footergrid">
 
 
-    <div class="footercontact">
+    <div class="footercontent">
         <h1>Contact</h1>
         <p>
             nigga what nigga bla bla hey du der</p>
@@ -14,7 +14,7 @@
 
     </div>
 
-    <div class="footercollection">
+    <div class="footercontent">
 
 
         <h1>Collection</h1>
@@ -28,7 +28,7 @@
 
     </div>
 
-    <div class="footerinfo">
+    <div class="footercontent">
 
 
         <h1>Information</h1>
@@ -42,7 +42,7 @@
 
     </div>
 
-    <div class="footertouch">
+    <div class="footercontent">
 
 
         <h1>Let's stay in touch</h1>
@@ -67,41 +67,28 @@
     .footergrid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 40px;
-        grid-auto-rows: minmax(100px, auto);
+        max-width: 1000px;
+        margin: 0 auto;
+        grid-gap: 5px;
     }
 
-    .footercontact {
-        grid-column: 1/4;
-        grid-row: 1;
-        border: 2px solid black;
+    .footercontent {
+        padding: 10px;
     }
 
-    .footercollection {
-        grid-column: 2/4;
-        grid-row: 1;
-        border: 2px solid black;
+
+    @media screen and (max-width:780px) {
+        .footergrid {
+            max-width: 100%;
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
-    .footerinfo {
-        grid-column: 3/4;
-        grid-row: 1;
-        border: 2px solid black;
-    }
-
-    .footertouch {
-        grid-column: 4/4;
-        grid-row: 1;
-        border: 2px solid black;
-    }
-    /*---footer overskrift---*/
-
-    h1 {
-        margin: 10px;
-    }
-
-    h3 {
-        margin: 10px;
+    @media screen and (max-width:480px) {
+        .footergrid {
+            max-width: 100%;
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 
 </style>
