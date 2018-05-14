@@ -1,51 +1,50 @@
 <link rel="stylesheet" href="">
-<div class="footergrid">
+<div class="footerbaggrund">
+    <div class="footergrid">
+        <div class="footercontent">
+            <h1>Contact</h1>
+            <p>Design By Us<br> Rentemestervej 43<br> 2400 København NV
+            </p>
+            <p>
+                <a class="email_link" href="mailto:mail@design-by-us.com">mail@design-by-us.com</a>
+            </p>
+            <p>+45 3811 8086</p>
+        </div>
 
+        <div class="footercontent">
+            <h1>Collection</h1>
+            <ul class="footer_liste">
+                <li>lightning</li>
+                <li>Seating</li>
+                <li>Tables</li>
+                <li>Various</li>
+            </ul>
+        </div>
 
-    <div class="footercontent">
-        <h1>Contact</h1>
-        <p>Design By Us<br> Rentemestervej 43<br> 2400 København NV
-        </p>
-        <p>
-            <a href="mailto:mail@design-by-us.com">mail@design-by-us.com</a>
-        </p>
-        <p>+45 3811 8086</p>
+        <div class="footercontent">
+            <h1>Information</h1>
+            <ul class="footer_liste">
+                <li>Intirior Projects </li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Become Dealer</li>
+                <li>Terms and conditions</li>
+            </ul>
+
+        </div>
+
+        <div class="footercontent">
+            <h1>Let's stay in touch</h1>
+            <p>Sign up for our newsletter and we’ll keep you updated with all the latest news and exiting information.</p>
+
+            <input class="email_felt" type="text" name="FirstName" value="Type email">
+            <button class="email_felt_submit" type="submit">OK</button>
+        </div>
+
     </div>
-
-    <div class="footercontent">
-        <h1>Collection</h1>
-        <ul>
-            <li>lightning</li>
-            <li>Seating</li>
-            <li>Tables</li>
-            <li>Various</li>
-        </ul>
-    </div>
-
-    <div class="footercontent">
-        <h1>Information</h1>
-        <ul>
-            <li>Intirior Projects </li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Become Dealer</li>
-            <li>Terms and conditions</li>
-        </ul>
-
-    </div>
-
-    <div class="footercontent">
-
-        <h1>Let's stay in touch</h1>
-        <p>Sign up for our newsletter and we’ll keep you updated with all the latest news and exiting information.</p>
-
-        <input type="text" name="FirstName" value="Type email">
-        <button type="submit">OK</button>
-    </div>
-
 </div>
 
-<div class="footer_baggrund">
+<div class="footer_bund_baggrund">
     <div id="footer_bund">
         <div class="footer_bund_content">
             <p>Copyright 2018 &copy; Design By Us</p>
@@ -68,7 +67,18 @@
 <style>
     /*---------Footer--------*/
 
-    .footer_baggrund {
+    .footerbaggrund {
+        color: #FFF;
+        width: 100%;
+        background-color: #232323;
+    }
+
+    .email_link {
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    .footer_bund_baggrund {
         width: 100%;
         background-color: #000;
     }
@@ -84,24 +94,51 @@
     .footercontent,
     .footer_bund_content {
         padding: 10px;
+        line-height: 1.5em;
     }
 
     #footer_bund {
         color: #FFF;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        max-width: 100%;
+        max-width: 90%;
         margin: 0 auto;
         grid-gap: 5px;
     }
 
-    li {
-        text-decoration: none;
+
+    img.betalingskort {
+        padding-top: 16px;
+        display: block;
+        margin: 0 auto;
     }
 
     .socialmedia {
+        padding: 5px;
         float: right;
         width: 33px;
+    }
+
+    .footercontent ul {
+        padding: 0;
+    }
+
+    .footercontent li {
+        list-style-type: none;
+    }
+
+    .email_felt {
+        border: 0;
+        border-radius: 3px;
+        background: #FFF;
+        padding: 6px;
+    }
+
+    .email_felt_submit {
+        border: 0;
+        border-radius: 3px;
+        background: #FFF;
+        padding: 6px 12px;
     }
 
 
