@@ -30,6 +30,10 @@ p {
 
 /*-----MENU STYLING START-------*/
 
+header {
+    height: 150px;
+}
+
 a {
     text-decoration: none;
     color: #232323;
@@ -174,7 +178,7 @@ a:hover {
     padding-top: 125px;
     background: #ededed;
     list-style-type: none;
-    /* to stop flickering of text in safari */
+
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
@@ -185,7 +189,6 @@ a:hover {
     padding: 10px 0;
     font-size: 22px;
 }
-
 
 /*And let's slide it in from the left*/
 
