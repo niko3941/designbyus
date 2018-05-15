@@ -1,61 +1,47 @@
-<nav id="shop_menu">
-    <div id="menuToggle">
-        <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it. -->
-        <input type="checkbox" />
-
-        <!-- Some spans to act as a hamburger. They are acting like a real hamburger not that McDonalds stuff.-->
-        <span>SHOP</span>
-
-
-        <!-- Too bad the menu has to be inside of the button but hey, it's pure CSS magic.-->
-        <ul id="menu">
+<div class="top_menu">
+    <div class="dropdown_shop">
+        <button class="dropbtn">SHOP</button>
+        <div class="dropdown-content">
             <a href="javascript: visAllProducts();">
-                <li>All Products</li>
-            </a>
+            All Products
+        </a>
             <a href="javascript: visLightning();">
-                <li> - Lightning</li>
-            </a>
+            Lightning
+        </a>
             <a href="javascript: visSeating();">
-                <li> - Seating</li>
-            </a>
+            Seating
+        </a>
             <a href="javascript: visTables();">
-                <li> - Tables</li>
-            </a>
+            Tables
+        </a>
             <a href="javascript: visVarious();">
-                <li> - Various</li>
-            </a>
-        </ul>
+            Various
+        </a>
+        </div>
     </div>
-</nav>
 
-<nav id="about_menu">
-    <div id="menuToggle_about">
-        <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it. -->
-        <input type="checkbox" />
+    <img src="img/logo.jpg" class="logo" alt="Design By Us logo">
 
-        <!-- Some spans to act as a hamburger. They are acting like a real hamburger not that McDonalds stuff.-->
-        <span>ABOUT</span>
-
-
-        <!-- Too bad the menu has to be inside of the button but hey, it's pure CSS magic.-->
-        <ul id="menu_about">
+    <div class="dropdown_about">
+        <button class="dropbtn">ABOUT</button>
+        <div class="dropdown-content">
             <a href="contact.html">
-                <li>Contact</li>
+                Contact
             </a>
             <a href="interiorprojects.html">
-                <li>Interior Project</li>
+                Interior Project
             </a>
             <a href="dealer.html">
-                <li>Become Dealer</li>
+                Become Dealer
             </a>
             <a href="press.html">
-                <li>Press</li>
+                Press
             </a>
             <a href="media.html">
-                <li>Media</li>
+                Media
             </a>
-        </ul>
+        </div>
     </div>
-</nav>
+</div>
 
 <script src="navigationJS.js"></script>
