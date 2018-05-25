@@ -1,121 +1,125 @@
 body {
-	margin: 0;
+    margin: 0;
 }
 
 #templateModtager {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-column: 2 / 4;
-	grid-row: 2;
-	grid-gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 2 / 4;
+    grid-row: 2;
+    grid-gap: 40px;
 }
 
 article {
-	border: 2px solid black;
+    border: 2px solid black;
 }
 
 h4,
 p {
-	font-family: 'Quicksand',
-	sans-serif;
+    font-family: 'Quicksand',
+    sans-serif;
 }
 
 h1,
 h2,
 h3 {
-	font-size: 30px;
-	font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
 }
 
 h2,
 h3 {
-	text-align: center;
-	color: black;
+    text-align: center;
+    color: black;
 }
 
 p {
-	margin: 10px;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
 }
 
 
 /*-----MENU STYLING START-------*/
 
 .top_menu {
-	padding-top: 1em;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	max-width: 90%;
-	margin: 0 auto;
-	grid-gap: 5px;
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 90%;
+    margin: 0 auto;
+    grid-gap: 5px;
 }
 
 .logo {
-	width: 300px;
-	margin: 0 auto;
+    width: 300px;
+    margin: 0 auto;
 }
 
 .dropbtn {
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	padding: 16px;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
 .dropdown_shop {
-	position: relative;
-	display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .dropdown_about {
-	text-align: right;
-	position: relative;
-	display: inline-block;
+    text-align: right;
+    position: relative;
+    display: inline-block;
 }
 
 .dropdown-content {
-	position: absolute;
-	display: none;
-	background-color: #FFF;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	z-index: 1;
+    position: absolute;
+    display: none;
+    background-color: #FFF;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .dropdown-content-right {
-	position: absolute;
-	right: 0;
-	display: none;
-	background-color: #FFF;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	z-index: 1;
+    position: absolute;
+    right: 0;
+    display: none;
+    background-color: #FFF;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .dropdown-content a,
 .dropdown-content-right a {
-	color: black;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 .dropdown-content a:hover,
 .dropdown-content-right a:hover {
-	background-color: #f1f1f1
+    background-color: #f1f1f1
 }
 
 .dropdown_shop:hover .dropdown-content,
 .dropdown_about:hover .dropdown-content-right {
-	display: block;
+    display: block;
 }
 
 .dropdown_about:hover .dropdown-content {
-	text-align: right;
+    text-align: right;
 }
 
 .dropdown_shop:hover .dropbtn,
 .dropdown_about:hover .dropbtn {
-	background-color: #FFF;
+    background-color: #FFF;
 }
 
 
@@ -125,41 +129,41 @@ p {
 /*-----------SHOP PRODUCTS-----------*/
 
 .produkter {
-	width: 100%;
-	cursor: pointer;
+    width: 100%;
+    cursor: pointer;
 
 }
 
 .wrapper {
-	margin: 10px 50px 50px 50px;
+    margin: 10px 50px 50px 50px;
 }
 
 .indhold_produkter {
-	padding: 20px;
-	/*	border: 2px solid #dfc7e3;*/
-	border-radius: 0px 40px 0px 40px;
-	border: 3px solid #f5edf5;
+    padding: 20px;
+    /*	border: 2px solid #dfc7e3;*/
+    border-radius: 0px 40px 0px 40px;
+    border: 3px solid #f5edf5;
 
 }
 
 .indhold_produkter h2 {
-	font-family: 'Fredoka One', cursive;
+    font-family: 'Fredoka One', cursive;
 }
 
 #knap_read_more button {
-	color: white;
-	font-family: 'Quicksand',
-	sans-serif;
-	font-size: 0.9em;
-	background-color: #B79494;
-	border-radius: 8px;
-	padding: 10px;
-	transition-duration: 0.4s;
-	cursor: pointer;
+    color: white;
+    font-family: 'Quicksand',
+    sans-serif;
+    font-size: 0.9em;
+    background-color: #B79494;
+    border-radius: 8px;
+    padding: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
 
 }
 
 #knap_read_more button:hover {
-	background-color: #E5D9D8;
-	color: black;
+    background-color: #E5D9D8;
+    color: black;
 }
