@@ -34,7 +34,7 @@ h3 {
 }
 
 p {
-    margin: 10px;
+    margin: 10px 0px;
 }
 
 a {
@@ -123,10 +123,20 @@ a {
 }
 
 
-
-
-
 /*-----------SHOP PRODUCTS-----------*/
+
+#billede_sortering {
+    padding: 1em 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 90%;
+    margin: 0 auto;
+    grid-gap: 20px;
+}
+
+#billede_sortering img {
+    width: 100%;
+}
 
 .produkter {
     width: 100%;
