@@ -10,8 +10,20 @@ body {
     grid-gap: 40px;
 }
 
-article {
-    border: 2px solid black;
+#templateModtagerForside {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 2 / 4;
+    grid-row: 2;
+    grid-gap: 40px;
+}
+
+#templateModtagerForside h2 {
+    font-size: 16px;
+}
+
+#templateModtagerForside img {
+    height: 15vw;
 }
 
 h4,
@@ -22,14 +34,18 @@ a {
 }
 
 h1,
-h2,
 h3 {
     font-size: 30px;
     font-family: 'Nunito', sans-serif;
 }
 
+h2 {
+    font-size: 24px;
+}
+
 h2,
 h3 {
+    font-family: 'Nunito', sans-serif;
     text-align: center;
     color: black;
 }
@@ -152,8 +168,8 @@ a {
 .indhold_produkter {
     padding: 20px;
     /*	border: 2px solid #dfc7e3;*/
-    border-radius: 0px 40px 0px 40px;
-    border: 3px solid #f5edf5;
+    /*border-radius: 0px 40px 0px 40px;*/
+    border-left: 3px solid #f5edf5;
 
 }
 

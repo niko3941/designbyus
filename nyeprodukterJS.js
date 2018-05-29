@@ -6,7 +6,7 @@ async function hentMenu() {
 }
 
 let produkter;
-let templateModtager = document.querySelector("#templateModtager");
+let templateModtager = document.querySelector("#templateModtagerForside");
 let produktTemplate = document.querySelector("#produktTemplate");
 let cat;
 if (window.name) {
@@ -19,7 +19,7 @@ if (window.name) {
 
 //hent Json fra Wordpress Rest API
 async function hentWpData() {
-    let wpData = await fetch("http://simonepoulsen.dk/kea/2semester/wordpress/wp-json/wp/v2/products?per_page=9");
+    let wpData = await fetch("http://simonepoulsen.dk/kea/2semester/wordpress/wp-json/wp/v2/products?per_page=8");
     //vis objekt som Json
     produkter = await wpData.json();
     visProdukter();
