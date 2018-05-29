@@ -36,6 +36,41 @@ function visAnsatte() {
     })
 }
 
+function initMap() {
+    //koordinater
+    let designbyus = {
+        lat: 55.7068731,
+        lng: 12.5250508
+    };
+
+
+    //opretter et kort
+    let map = new google.maps.Map(document.querySelector('#map'), {
+        zoom: 11,
+        center: designbyus
+    });
+
+
+    //indsæt marker
+    let marker = new google.maps.Marker({
+        position: designbyus,
+        map: map,
+        //icon: "indsæt pointer sti her, hvis vi ønsker costumized pointer",
+        title: "Design By Us",
+    });
+
+    //infovindue
+    let infowindow = new google.maps.InfoWindow({
+        content: '<h2>Skriv indhold til infovindue her</h2>',
+    })
+
+    //click åben infovindue
+    marker.addListener('click', function () {
+        infowindow.open(map, marker);
+
+    });
+}
+
 
 //Footer fra footer.html hentes
 async function hentFooter() {
