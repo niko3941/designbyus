@@ -1,7 +1,7 @@
 <div class="footerbaggrund">
     <div class="footergrid">
         <div class="footercontent">
-            <h1>Contact</h1>
+            <h2>Contact</h2>
             <p>Design By Us<br> Rentemestervej 43<br> 2400 København NV
             </p>
             <p>
@@ -11,7 +11,7 @@
         </div>
 
         <div class="footercontent">
-            <h1>Collection</h1>
+            <h2>Collection</h2>
             <ul class="footer_liste">
                 <a href="javascript: visAllProducts();">
                     <li>All Products</li>
@@ -32,7 +32,7 @@
         </div>
 
         <div class="footercontent">
-            <h1>Information</h1>
+            <h2>Information</h2>
             <ul class="footer_liste">
                 <a href="interiorprojects.html">
                     <li>Interior Projects </li>
@@ -53,8 +53,8 @@
 
         </div>
 
-        <div class="footercontent">
-            <h1>Let's stay in touch</h1>
+        <div id="nyhedsbrev" class="footercontent">
+            <h2>Let's stay in touch</h2>
             <p>Sign up for our newsletter and we’ll keep you updated with all the latest news and exiting information.</p>
 
             <input class="email_felt" type="text" name="FirstName" value="Type email">
@@ -71,7 +71,7 @@
         </div>
 
         <div class="footer_bund_content">
-            <img src="img/betalingskort.png" class="betalingskort" alt="Betalingskort ved køb hos Design By Us">
+            <!--<img src="img/betalingskort.png" class="betalingskort" alt="Betalingskort ved køb hos Design By Us">-->
         </div>
 
         <div class="footer_bund_content">
@@ -87,20 +87,26 @@
 <style>
     /*---------Footer--------*/
 
+    #nyhedsbrev {
+        border: solid 10px #deeff5;
+        background-color: #FFF;
+    }
+
     .footerbaggrund {
-        color: #FFF;
+        padding-top: 1em;
+        margin-top: 2em;
+        background-color: #deeff5;
+        margin-top: 2em;
         width: 100%;
-        background-color: #232323;
     }
 
     .email_link {
-        color: #FFF;
         text-decoration: none;
     }
 
     .footer_bund_baggrund {
+        background-color: #deeff5;
         width: 100%;
-        background-color: #000;
     }
 
     .footergrid {
@@ -111,19 +117,23 @@
         grid-gap: 5px;
     }
 
+    .footercontent h2 {
+        font-size: 18px;
+    }
+
     .footercontent,
     .footer_bund_content {
+        font-size: 14px;
         padding: 10px;
         line-height: 1.5em;
     }
 
     .footercontent a,
     .footer_bund_content a {
-        color: #FFF;
+        color: #000;
     }
 
     #footer_bund {
-        color: #FFF;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         max-width: 1024px;
