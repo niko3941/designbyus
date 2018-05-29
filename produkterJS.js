@@ -8,6 +8,10 @@ async function hentMenu() {
 let produkter;
 let templateModtager = document.querySelector("#templateModtager");
 let produktTemplate = document.querySelector("#produktTemplate");
+
+//cat=category, bruges til at sortere mellem kategorierne.
+//hvis cat er = et bestemt kategorinummer, så går den til den valgte kategori
+//hvis den ikke er lig med en bestemt kategori, går den til kategori 5, som er alle produkter
 let cat;
 if (window.name) {
     cat = window.name;
@@ -36,6 +40,7 @@ function sortering() {
 
 //lav en klon af template
 function visProdukter() {
+    //hvis der er valgt en bestemt kategori
     if (cat != 5) {
         produkter.forEach(produkt => {
 
@@ -53,6 +58,7 @@ function visProdukter() {
             }
         });
     } else {
+        //hvis der ikke
         produkter.forEach(produkt => {
 
             let klon = produktTemplate.cloneNode(true).content;
