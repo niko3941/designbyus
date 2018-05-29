@@ -62,12 +62,19 @@ p {
     margin: 10px 0px;
 }
 
-a {
+a. {
     text-decoration: none;
 }
 
 
 /*-----MENU STYLING START-------*/
+
+.dbulogo {
+    text-decoration: none;
+    grid-column: 2/3;
+    grid-row: 1;
+    text-align: center;
+}
 
 .top_menu {
     padding-top: 1em;
@@ -93,14 +100,21 @@ a {
 }
 
 .dropdown_shop {
-    position: relative;
+    cursor: pointer;
     display: inline-block;
+    max-width: 30%;
+    position: absolute;
+    top: 30px;
+    left: 16px;
 }
 
 .dropdown_about {
-    text-align: right;
-    position: relative;
+    cursor: pointer;
     display: inline-block;
+    max-width: 30%;
+    position: absolute;
+    top: 30px;
+    right: 16px;
 }
 
 .dropdown-content {
@@ -261,7 +275,9 @@ a {
     text-align: center;
 }
 
+
 /*------------SLIDER FRA BIBLIOTEK------------*/
+
 
 /*! Flickity v2.1.1
 https://flickity.metafizzy.co
@@ -288,6 +304,7 @@ https://flickity.metafizzy.co
     height: 100%;
 }
 
+
 /* draggable */
 
 .flickity-enabled.is-draggable {
@@ -309,6 +326,7 @@ https://flickity.metafizzy.co
     cursor: -webkit-grabbing;
     cursor: grabbing;
 }
+
 
 /* ---- flickity-button ---- */
 
@@ -340,8 +358,8 @@ s .flickity-button:active {
     fill: #FFF;
     border-radius: 50%;
     padding: 1em;
-
 }
+
 
 /* ---- previous/next buttons ---- */
 
@@ -362,6 +380,7 @@ s .flickity-button:active {
     right: -45px;
 }
 
+
 /* right to left */
 
 .flickity-rtl .flickity-prev-next-button.previous {
@@ -381,6 +400,7 @@ s .flickity-button:active {
     width: 60%;
     height: 60%;
 }
+
 
 /* ---- page dots ---- */
 
