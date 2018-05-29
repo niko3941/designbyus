@@ -5,22 +5,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Home Page - Design By Us</title>
 </head>
 
 <style>
+    #baggrundsvideo {
+        margin-top: 5px;
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+    }
+
     #myVideo {
-        position: absolute;
-        top: -70%;
-        left: 0;
         width: 100vw;
         z-index: -1;
     }
 
     .intro {
-        padding-top: 8em;
+        padding-top: 1em;
         width: 75%;
         margin: 0 auto;
     }
@@ -99,21 +103,44 @@
             @include transform(translateY(-15px));
         }
     }
-
 </style>
 
 <body>
     <header>
         <div id="navigation" data-navigation></div>
     </header>
-    <video autoplay muted loop id="myVideo">
+    <div id="baggrundsvideo">
+        <video autoplay muted loop id="myVideo">
               <source src="img/splashvideo.mp4" type="video/mp4">
     </video>
-    <h2 class="intro">We try not to be a typical Scandinavian design company, by using a pallet of design solutions that are more colorful, eye catching and fun. We wish to push our aesthetics away from the mundane and tread in deeper waters, where success is harder to achieve, however greater the prize. </h2>
+    </div>
+    <h2 class="intro">We try not to be a typical Scandinavian design company, <br> by using a pallet of design solutions that are more colorful,<br> eye catching and fun. We wish to push our aesthetics away <br> from the mundane and tread in deeper waters, where success is <br> harder to achieve, however greater the prize. </h2>
     <h3>See our design</h3>
     <a href="#see_our_design"><img id="arrow" class="bounce" src="img/arrow.png" alt="Navigation til kort over resturanter"></a>
 
+    <div id="forside_tekst">
+        <div class="forside_tekstbox">
+            <div class="item1">
+                <h2>Our ballroom</h2>
+                <p>This is the Ballroom Ø20 pendent. The first of the Ballroom series and is by no surprise our most popular lamp. It fits any occasion at any location and spreads a humoristic curiosity in a cluster of colors or a simple row of smoked balls.</p>
+                <h2></h2>
+                <p>Dining chair with custom color velvet, quilted back pillow. Dark stained oak legs.. Comfort, to die for. Its popularity is increasing each year, even though it was originally designed for more than a decade ago. The design idea is inspired by the elevated arena of a circus ring. And the functionality of the chair is done so your tall and short friends both can rest their feet on the ring.</p>
+            </div>
+            <div class="item2">
+                <img src="img/stemning_produkt.jpg" alt="Design By Us produkter">
+            </div>
 
+            <div class="item3">
+                <img src="img/stemning_produkt2.jpg" alt="Design By Us produkter">
+            </div>
+            <div class="item4">
+                <h2>Ballroom on the wall</h2>
+                <p>The Ballroom series is by no surprise our most popular. It fits any occasion at any location and spreads a humoristic curiosity. This particular Ballroom is for the wall mounting – Perfect for the bedroom, hall or foyer. – Its time to get balls on the walls!</p>
+                <h2></h2>
+                <p>A new fabric in our “bitch” series. This is a velvet version. Dark stained legs.</p>
+            </div>
+        </div>
+    </div>
 
     <div class="wrapper">
         <section id="templateModtagerForside"></section>
@@ -122,9 +149,11 @@
                <a data-produktknap1 href=""><img class="produkter" src="" data-produktpic></a>
                <a data-produktknap2 href=""><h2 data-produktnavn></h2></a>
                <p data-produktpris></p>
-                <p data-produktbeskrivelse></p>
+                <p class="produkt_beskrivelse" data-produktbeskrivelse></p>
+                <div class="knapper">
                 <a id="knap_read_more" data-produktknap3 href=""><button>Add to favorites</button></a>
                 <a id="knap_read_more" data-produktknap4 href=""><button>Take a look</button></a>
+                 </div>
              </article>
          </template>
     </div>

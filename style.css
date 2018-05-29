@@ -15,7 +15,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-column: 2 / 4;
     grid-row: 2;
-    grid-gap: 40px;
+    grid-gap: 20px;
 }
 
 #templateModtagerForside h2 {
@@ -25,6 +25,8 @@ body {
 #templateModtagerForside img {
     height: 15vw;
 }
+
+.produkt_beskrivelse {}
 
 h4,
 p,
@@ -36,7 +38,7 @@ a {
 h1,
 h3 {
     font-size: 30px;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 h2 {
@@ -45,7 +47,7 @@ h2 {
 
 h2,
 h3 {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     color: black;
 }
@@ -140,6 +142,42 @@ a {
 }
 
 
+
+/*-----------FORSIDE-----------*/
+
+.forside_tekstbox {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 10px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.item1 {
+    border: solid 1px #000;
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+.item2 {
+    border: solid 1px #000;
+    grid-column: 2/3;
+    grid-row: 1;
+}
+
+.item3 {
+    border: solid 1px #000;
+    grid-column: 1/2;
+    grid-row: 2;
+}
+
+.item4 {
+    border: solid 1px #000;
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+
 /*-----------SHOP PRODUCTS-----------*/
 
 #billede_sortering {
@@ -166,7 +204,8 @@ a {
 }
 
 .indhold_produkter {
-    padding: 20px;
+    text-align: center;
+    padding: 10px;
     /*	border: 2px solid #dfc7e3;*/
     /*border-radius: 0px 40px 0px 40px;*/
     border-left: 3px solid #f5edf5;
@@ -174,14 +213,13 @@ a {
 }
 
 #knap_read_more button {
+    width: 100%;
     color: white;
-    font-family: 'Quicksand',
-    sans-serif;
-    font-size: 0.9em;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10px;
     background-color: #B79494;
     border-radius: 8px;
-    padding: 10px;
-    transition-duration: 0.4s;
+    padding: 5px;
     cursor: pointer;
 
 }
@@ -189,4 +227,12 @@ a {
 #knap_read_more button:hover {
     background-color: #E5D9D8;
     color: black;
+}
+
+.knapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1 / 4;
+    grid-row: 1;
+    grid-gap: 5px;
 }
