@@ -167,6 +167,8 @@ a {
 }
 
 .item1 {
+    padding: 1em;
+    background-color: #fff1f0;
     grid-column: 1/4;
     grid-row: 1;
 }
@@ -192,6 +194,8 @@ a {
 .item4 {
     grid-column: 3/6;
     grid-row: 2;
+    background-color: #e6f3f7;
+    padding: 1em;
 }
 
 
@@ -227,6 +231,7 @@ a {
     /*	border: 2px solid #dfc7e3;*/
     /*border-radius: 0px 40px 0px 40px;*/
     border-left: 3px solid #f5edf5;
+    border-right: 3px solid #f5edf5;
 }
 
 #knap_read_more button {

@@ -12,13 +12,14 @@
 
 <style>
     #baggrundsvideo {
-        background-color: rgba(193, 66, 66, 0.16);
         z-index: 9;
         margin-top: 5px;
-        width: 100%;
-        height: 640px;
+        max-width: 1024px;
+        margin: 0 auto;
+        height: 550px;
         overflow: hidden;
-        opacity: 0.5;
+        opacity: 0.4;
+        margin-bottom: 2em;
     }
 
     #myVideo {
@@ -29,13 +30,14 @@
 
     .intro {
         position: absolute;
-        top: 230px;
+        top: 200px;
         left: 22vw;
         padding-top: 1em;
         padding-bottom: 1em;
         width: 55%;
         margin: 0 auto;
-        font-size: 1.9em;
+        font-size: 28px;
+        font-weight: 600;
     }
 
     #arrow {
@@ -114,6 +116,7 @@
             @include transform(translateY(-15px));
         }
     }
+
 </style>
 
 <body>
@@ -126,7 +129,7 @@
     </video>
     </div>
 
-    <h2 class="intro">We try not to be a typical Scandinavian design company, by using a pallet of design solutions that are more colorful, eye catching and fun. We wish to push our aesthetics away from the mundane and tread in deeper waters, where success is harder to achieve, however greater the prize. <br> <br><br> See our design</h2>
+    <h2 class="intro">We try not to be a typical Scandinavian design company, by using a pallet of design solutions that are more colorful, eye catching and fun. We wish to push our aesthetics away from the mundane and tread in deeper waters, where success is harder to achieve, however greater the prize. <br> See our design</h2>
 
     <a href="#see_our_design"><img id="arrow" class="bounce" src="img/arrow.png" alt="Navigation til kort over resturanter"></a>
 
