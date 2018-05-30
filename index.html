@@ -17,7 +17,6 @@
         margin: 0 auto;
         height: 550px;
         overflow: hidden;
-        margin-bottom: 2em;
     }
 
     #myVideo {
@@ -69,7 +68,6 @@
         padding: 1em 0;
         width: 5%;
         @include animation(bounce 2s infinite);
-
     }
 
     .bounce {
@@ -137,6 +135,7 @@
             @include transform(translateY(-15px));
         }
     }
+
 </style>
 
 <body>
@@ -144,90 +143,91 @@
         <div id="navigation" data-navigation></div>
     </header>
 
+
     <div id="baggrundsvideo">
         <video autoplay muted loop id="myVideo">
-              <source src="img/green_splashvideo.mp4" type="video/mp4">
+              <source src="img/SplashVideo%20Lysebl%C3%A5.mp4" type="video/mp4">
             </video>
     </div>
     <h2 class="intro">We try not to be a typical Scandinavian design company, by using a pallet of design solutions that are more colorful, eye catching and fun. We wish to push our aesthetics away from the mundane and tread in deeper waters, where success is harder to achieve, however greater the prize.</h2>
 
     <a href="#see_our_design"><img id="arrow" class="bounce" src="img/arrow.png" alt="Navigation til kort over resturanter"></a>
-
-    <div id="container">
-        <div id="forside_tekst">
-            <div class="forside_tekstbox1">
-                <div class="item1">
-                    <h2>Ballroom on the wall</h2>
-                    <p>This is the Ballroom Ø20 pendent. The first of the Ballroom series and is by no surprise our most popular lamp. It fits any occasion at any location and spreads a humoristic curiosity in a cluster of colors or a simple row of smoked balls.</p>
-                    <p>The Ballroom series is by no surprise our most popular. It fits any occasion at any location and spreads a humoristic curiosity. This particular Ballroom is for the wall mounting – Perfect for the bedroom, hall or foyer. – Its time to get balls on the walls!</p>
+    <div id="backgroundforside">
+        <div id="container">
+            <div id="forside_tekst">
+                <div class="forside_tekstbox1">
+                    <div class="item1">
+                        <h2>Ballroom on the wall</h2>
+                        <p>This is the Ballroom Ø20 pendent. The first of the Ballroom series and is by no surprise our most popular lamp. It fits any occasion at any location and spreads a humoristic curiosity in a cluster of colors or a simple row of smoked balls.</p>
+                        <p>The Ballroom series is by no surprise our most popular. It fits any occasion at any location and spreads a humoristic curiosity. This particular Ballroom is for the wall mounting – Perfect for the bedroom, hall or foyer. – Its time to get balls on the walls!</p>
+                    </div>
+                    <div class="item2">
+                        <img src="img/stemning_produkt.jpg" alt="Design By Us produkter">
+                    </div>
                 </div>
-                <div class="item2">
-                    <img src="img/stemning_produkt.jpg" alt="Design By Us produkter">
-                </div>
-            </div>
-            <div class="forside_tekstbox2">
-                <div class="item3">
-                    <img src="img/stemning_produkt2.jpg" alt="Design By Us produkter">
-                </div>
-                <div class="item4">
-                    <h2>The Skinny Bitch chair </h2>
-                    <p>Dining chair with custom color velvet, quilted back pillow. Dark stained oak legs.. Comfort, to die for. </p>
-                    <p>Its popularity is increasing each year, even though it was originally designed for more than a decade ago. The design idea is inspired by the elevated arena of a circus ring. And the functionality of the chair is done so your tall and short friends both can rest their feet on the ring.</p>
-                    <p>A new fabric in our “bitch” series. This is a velvet version. Dark stained legs.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-    <div id="slider">
-        <div class="carousel" data-flickity='{ "wrapAround": true }'>
-            <div class="carousel-cell">
-                <img src="img/produkt3.jpg" alt="Ballroom lamp in purple">
-                <h3>Xl Ballroom in purple</h3>
-                <p>4390 DKK</p>
-                <div class="overlay">
-                    <div class="overlay_text">Take a look</div>
-                </div>
-            </div>
-            <div class="carousel-cell">
-                <img src="img/produkt2.jpg" alt="Ballroom lamp in pink">
-                <h3>Xl Ballroom in pink</h3>
-                <p>4390 DKK</p>
-                <div class="overlay">
-                    <div class="overlay_text">Take a look</div>
-                </div>
-            </div>
-            <div class="carousel-cell">
-                <img src="img/produkt6.jpg" alt="Skinny bitch in leather">
-                <h3>Xl Ballroom in amber</h3>
-                <p>4390 DKK</p>
-                <div class="overlay">
-                    <div class="overlay_text">Take a look</div>
-                </div>
-            </div>
-            <div class="carousel-cell">
-                <img src="img/produkt4.jpg" alt="Fat bitch in leather">
-                <h3>Xl Ballroom in army</h3>
-                <p>4390 DKK</p>
-                <div class="overlay">
-                    <div class="overlay_text">Take a look</div>
-                </div>
-            </div>
-            <div class="carousel-cell">
-                <img src="img/produkt1.jpg" alt="Ballroom lamp in grey">
-                <h3>Xl Ballroom in grey</h3>
-                <p>4390 DKK</p>
-                <div class="overlay">
-                    <div class="overlay_text">Take a look</div>
+                <div class="forside_tekstbox2">
+                    <div class="item3">
+                        <img src="img/stemning_produkt2.jpg" alt="Design By Us produkter">
+                    </div>
+                    <div class="item4">
+                        <h2>The Skinny Bitch chair </h2>
+                        <p>Dining chair with custom color velvet, quilted back pillow. Dark stained oak legs.. Comfort, to die for. </p>
+                        <p>Its popularity is increasing each year, even though it was originally designed for more than a decade ago. The design idea is inspired by the elevated arena of a circus ring. And the functionality of the chair is done so your tall and short friends both can rest their feet on the ring.</p>
+                        <p>A new fabric in our “bitch” series. This is a velvet version. Dark stained legs.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+
+
+    <div id="backgroundforside1">
+        <div id="slider">
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell">
+                    <img src="img/produkt3.jpg" alt="Ballroom lamp in purple">
+                    <h3>Xl Ballroom in purple</h3>
+                    <p>4390 DKK</p>
+                    <div class="overlay">
+                        <div class="overlay_text">Take a look</div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <img src="img/produkt2.jpg" alt="Ballroom lamp in pink">
+                    <h3>Xl Ballroom in pink</h3>
+                    <p>4390 DKK</p>
+                    <div class="overlay">
+                        <div class="overlay_text">Take a look</div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <img src="img/produkt6.jpg" alt="Skinny bitch in leather">
+                    <h3>Xl Ballroom in amber</h3>
+                    <p>4390 DKK</p>
+                    <div class="overlay">
+                        <div class="overlay_text">Take a look</div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <img src="img/produkt4.jpg" alt="Fat bitch in leather">
+                    <h3>Xl Ballroom in army</h3>
+                    <p>4390 DKK</p>
+                    <div class="overlay">
+                        <div class="overlay_text">Take a look</div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <img src="img/produkt1.jpg" alt="Ballroom lamp in grey">
+                    <h3>Xl Ballroom in grey</h3>
+                    <p>4390 DKK</p>
+                    <div class="overlay">
+                        <div class="overlay_text">Take a look</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <footer>

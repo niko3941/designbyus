@@ -1,10 +1,13 @@
 body {
     margin: 0;
+    background-color: white;
 }
 
 #container {
     max-width: 1024px;
     margin: 0 auto;
+    background-color: white;
+    border-top: solid 35px #fff;
 }
 
 #logo {
@@ -161,6 +164,16 @@ a {
 
 /*-----------FORSIDE-----------*/
 
+#backgroundforside {
+    width: 100%;
+    background-color: white;
+}
+
+#backgroundforside1 {
+    width: 100%;
+    background-color: white;
+}
+
 .seeourdesign {
     text-align: center;
 }
@@ -168,7 +181,7 @@ a {
 .forside_tekstbox1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 30px;
+    grid-gap: 35px;
     max-width: 1024px;
     margin: 0 auto;
 }
@@ -176,16 +189,24 @@ a {
 .forside_tekstbox2 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 30px;
+    grid-gap: 35px;
     max-width: 1024px;
     margin: 0 auto;
 }
 
 .item1 {
     padding: 1em;
-    background-color: #ffecea;
+    background-color: #e1d0d1;
     grid-column: 1/4;
     grid-row: 1;
+}
+
+.item1 h2 {
+    color: #604564;
+}
+
+.item1 p {
+    color: #604564;
 }
 
 .item2 {
@@ -209,22 +230,23 @@ a {
 .item4 {
     grid-column: 3/6;
     grid-row: 2;
-    background-color: #326367;
+    background-color: #bdcecd;
     padding: 1em;
-    color: #FFF;
+    color: #326367;
 }
 
 #slider {
     width: 1024px;
-    margin: 0 auto;
+    margin: 0 auto 300px auto;
     padding-bottom: 2em;
+    background-color: white;
 }
 
 .carousel-cell {
     text-align: center;
     margin-top: 2em;
     padding: 1em;
-    border: solid 10px #ffecea;
+    border: solid 1px #E7DADA;
     height: 300px;
     width: 26%;
     margin-right: 2em;
@@ -246,7 +268,7 @@ a {
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color: rgba(255, 236, 234, 0.9);
+    background-color: #E7DADA;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -278,6 +300,7 @@ a {
 
 /*------------SLIDER FRA BIBLIOTEK------------*/
 
+
 /*! Flickity v2.1.1
 https://flickity.metafizzy.co
 ---------------------------------------------- */
@@ -305,6 +328,7 @@ https://flickity.metafizzy.co
 
 
 /* draggable */
+
 
 /*.flickity-enabled.is-draggable {
     -webkit-tap-highlight-color: transparent;
@@ -354,7 +378,7 @@ s .flickity-button:active {
 }
 
 .flickity-button-icon {
-    background-color: #ffecea;
+    background-color: #E7DADA;
     fill: #FFF;
     border-radius: 50%;
     padding: 1em;
