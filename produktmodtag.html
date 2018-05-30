@@ -7,32 +7,124 @@
     <title></title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    img {
+        width: 100%;
+    }
 
+    .blank1,
+    .blank2,
+    .blank3 {
+        width: 100px;
+        outline-style: solid;
+        outline-color: gainsboro;
+    }
+
+    .blank1 {
+        grid-column: 1/8;
+        grid-row: 1;
+    }
+
+    #produktindhold {
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+    }
+
+    .produktbilleder {
+        grid-column: 1/8;
+        grid-row: 1;
+    }
+
+    .produktbeskrivelser {
+        grid-column: 9/16;
+        grid-row: 1;
+    }
+</style>
 
 <body>
     <header>
         <div data-navigation></div>
     </header>
+    <div id="container">
+        <article id="produktindhold">
+
+            <div class="produktbilleder">
+                <img class="produkter" src="" data-produktpic>
+                <img class="blank1" src="img/blankfirkant.jpg" alt="blank">
+                <img class="blank2" src="img/blankfirkant.jpg" alt="blank">
+                <img class="blank3" src="img/blankfirkant.jpg" alt="blank">
+            </div>
+
+            <div class="produktbeskrivelser">
+                <h2 data-produktnavn></h2><br>
+                <p data-produktpris></p><br>
+                <p data-produktbeskrivelse></p><br>
+                <p data-produktfarve></p><br>
+                <p data-produktspecifikation></p>
+            </div>
 
 
-    <article id="indhold">
-        <img class="produkter" src="" data-produktpic>
-        <h2 data-produktnavn></h2><br>
-        <p data-produktpris></p><br>
-        <p data-produktbeskrivelse></p><br>
-        <p data-produktfarve></p><br>
-        <p data-produktspecifikation></p>
-    </article>
+        </article>
 
 
 
 
+
+
+        <div id="backgroundforside1">
+            <div id="slider">
+                <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                    <div class="carousel-cell">
+                        <img src="img/produkt3.jpg" alt="Ballroom lamp in purple">
+                        <h3>Xl Ballroom in purple</h3>
+                        <p>4390 DKK</p>
+                        <div class="overlay">
+                            <div class="overlay_text">Take a look</div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="img/produkt2.jpg" alt="Ballroom lamp in pink">
+                        <h3>Xl Ballroom in pink</h3>
+                        <p>4390 DKK</p>
+                        <div class="overlay">
+                            <div class="overlay_text">Take a look</div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="img/produkt6.jpg" alt="Skinny bitch in leather">
+                        <h3>Xl Ballroom in amber</h3>
+                        <p>4390 DKK</p>
+                        <div class="overlay">
+                            <div class="overlay_text">Take a look</div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="img/produkt4.jpg" alt="Fat bitch in leather">
+                        <h3>Xl Ballroom in army</h3>
+                        <p>4390 DKK</p>
+                        <div class="overlay">
+                            <div class="overlay_text">Take a look</div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="img/produkt1.jpg" alt="Ballroom lamp in grey">
+                        <h3>Xl Ballroom in grey</h3>
+                        <p>4390 DKK</p>
+                        <div class="overlay">
+                            <div class="overlay_text">Take a look</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div data-footer></div>
     </footer>
     <script src="produktmodtagJS.js"></script>
     <script src="navigationJS.js"></script>
+    <script src="sliderJS.js"></script>
 </body>
 
 </html>
