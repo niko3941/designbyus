@@ -503,16 +503,15 @@ s .flickity-button:active {
 #knap_read_more button {
 	margin: 3px;
 	width: 45%;
-	border: solid 1px #326367;
-	background-color: #326367;
+	/*	border: solid 1px #326367;*/
+	background-color: #b28f8f;
 	color: #FFF;
-	border-radius: 3px;
-	padding: 6px 12px;
+	padding: 10px 12px;
 }
 
 #knap_read_more button:hover {
-	background-color: #326367;
-	color: black;
+	background-color: #262424;
+	color: white;
 }
 
 .knapper {
