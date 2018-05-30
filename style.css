@@ -183,9 +183,17 @@ a {
 
 .item1 {
     padding: 1em;
-    background-color: #ffecea;
+    background-color: #e1d0d1;
     grid-column: 1/4;
     grid-row: 1;
+}
+
+.item1 h2 {
+    color: #604564;
+}
+
+.item1 p {
+    color: #604564;
 }
 
 .item2 {
@@ -209,9 +217,9 @@ a {
 .item4 {
     grid-column: 3/6;
     grid-row: 2;
-    background-color: #326367;
+    background-color: #bdcecd;
     padding: 1em;
-    color: #FFF;
+    color: #326367;
 }
 
 #slider {
@@ -278,6 +286,7 @@ a {
 
 /*------------SLIDER FRA BIBLIOTEK------------*/
 
+
 /*! Flickity v2.1.1
 https://flickity.metafizzy.co
 ---------------------------------------------- */
@@ -305,6 +314,7 @@ https://flickity.metafizzy.co
 
 
 /* draggable */
+
 
 /*.flickity-enabled.is-draggable {
     -webkit-tap-highlight-color: transparent;
