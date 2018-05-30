@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Products - Design By Us</title>
 </head>
 
@@ -14,27 +15,30 @@
         <div data-navigation></div>
     </header>
 
+    <div id="container">
+        <div class="wrapper">
+            <div id="billede_sortering">
+                <a class="produkt_link" id="sorter_all"><img src="img/knap_all.jpg" alt="Knap som viser alle produkter">
+                </a>
+                <a class="produkt_link" id="sorter_lightning"><img src="img/knap_lightning.jpg" alt="Knap som viser Lightning">
+                </a>
+                <a class="produkt_link" id="sorter_seating"><img src="img/knap_seating.jpg" alt="Knap som viser Seating"></a>
+                <a class="produkt_link" id="sorter_tables"><img src="img/knap_tables.jpg" alt="Knap som viser Tables"></a>
+                <a class="produkt_link" id="sorter_various"><img src="img/knap_various.jpg" alt="Knap som viser Various"></a>
+            </div>
 
-    <div class="wrapper">
-        <div id="billede_sortering">
-            <a id="sorter_all"><img src="img/knap_all.jpg" alt="Knap som viser alle produkter"></a>
-            <a id="sorter_lightning"><img src="img/knap_lightning.jpg" alt="Knap som viser Lightning"></a>
-            <a id="sorter_seating"><img src="img/knap_seating.jpg" alt="Knap som viser Seating"></a>
-            <a id="sorter_tables"><img src="img/knap_tables.jpg" alt="Knap som viser Tables"></a>
-            <a id="sorter_various"><img src="img/knap_various.jpg" alt="Knap som viser Various"></a>
-        </div>
-
-        <section id="templateModtager"></section>
-        <template id="produktTemplate">
+            <section id="templateModtager"></section>
+            <template id="produktTemplate">
              <article id="indhold" class="indhold_produkter">
                <a data-produktknap1 href=""><img class="produkter" src="" data-produktpic></a>
                <a data-produktknap2 href=""><h2 data-produktnavn></h2></a>
                <p data-produktpris></p>
-                <p data-produktbeskrivelse></p>
+                <!--<p data-produktbeskrivelse></p>-->
                 <a id="knap_read_more" data-produktknap3 href=""><button>Add to favorites</button></a>
                 <a id="knap_read_more" data-produktknap4 href=""><button>Take a look</button></a>
              </article>
          </template>
+        </div>
     </div>
 
 
