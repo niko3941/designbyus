@@ -8,9 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
+    #backgroundcontact {
+        width: 100%;
+        background-color: white;
+    }
+
     #container {
         width: 1024px;
-        margin: 0 auto;
+        margin: 0 auto 300px auto;
+        height: 1000px;
     }
 
     #contact_content {
@@ -46,20 +52,17 @@
     input {
         font-family: 'Quicksand', sans-serif;
         font-size: 1em;
-
     }
 
     .firstname {
         flex-grow: 1;
         height: 40px;
         margin-right: 20px;
-
     }
 
     .lastname {
         flex-grow: 1;
         height: 40px;
-
     }
 
     .message {
@@ -75,7 +78,6 @@
         padding: 10px;
         margin-top: 5px;
         background-color: #eaeaea;
-
     }
 
     #map {
@@ -90,41 +92,43 @@
     <header>
         <div data-navigation></div>
     </header>
-    <div id="container">
-        <section id="contact_content">
-            <div id="contact_info">
-                <h2>Where to find us:</h2>
-                <p>Rentemestervej 43<br> 2400 Copenhagen NV<br> Denmark
-                    <br> Tel. +45 3811 8086<br> mail@design-by-us.com
-                    <br></p>
-                <h4>Showroom opening hours:</h4>
-                <p> Monday to friday 10.00-17.00<br> Weekends: closed</p>
+    <div id="backgroundcontact">
+        <div id="container">
+            <section id="contact_content">
+                <div id="contact_info">
+                    <h2>Where to find us:</h2>
+                    <p>Rentemestervej 43<br> 2400 Copenhagen NV<br> Denmark
+                        <br> Tel. +45 3811 8086<br> mail@design-by-us.com
+                        <br></p>
+                    <h4>Showroom opening hours:</h4>
+                    <p> Monday to friday 10.00-17.00<br> Weekends: closed</p>
+                </div>
+
+                <div id="contact_us">
+                    <h2>Write us a message</h2>
+                    <form class="kontaktos" action="/action_page.php">
+
+                        <input class="firstname" type="text" name="firstname" value="  First name"><br>
+
+
+                        <input class="lastname" type="text" name="lastname" value="  Last name"><br><br>
+
+
+                        <input class="message" type="text" name="message" value="  Type your message here"><br><br>
+
+                        <input class="submitknap" type="submit" value="Submit">
+                    </form>
+                </div>
+
+            </section>
+            <div>
+                <h2>Find us here</h2>
+                <div id="map"></div>
             </div>
 
-            <div id="contact_us">
-                <h2>Write us a message</h2>
-                <form class="kontaktos" action="/action_page.php">
-
-                    <input class="firstname" type="text" name="firstname" value="  First name"><br>
 
 
-                    <input class="lastname" type="text" name="lastname" value="  Last name"><br><br>
-
-
-                    <input class="message" type="text" name="message" value="  Type your message here"><br><br>
-
-                    <input class="submitknap" type="submit" value="Submit">
-                </form>
-            </div>
-
-        </section>
-        <div>
-            <h2>Find us here</h2>
-            <div id="map"></div>
         </div>
-
-
-
     </div>
     <footer>
         <div data-footer></div>
