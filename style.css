@@ -5,6 +5,7 @@ body {
 #container {
     max-width: 1024px;
     margin: 0 auto;
+    background-color: white;
 }
 
 #logo {
@@ -161,6 +162,16 @@ a {
 
 /*-----------FORSIDE-----------*/
 
+#backgroundforside1 {
+    width: 100%;
+    background-color: white;
+}
+
+#backgroundforside {
+    width: 100%;
+    background-color: white;
+}
+
 .seeourdesign {
     text-align: center;
 }
@@ -224,8 +235,9 @@ a {
 
 #slider {
     width: 1024px;
-    margin: 0 auto;
+    margin: 0 auto 300px auto;
     padding-bottom: 2em;
+    background-color: white;
 }
 
 .carousel-cell {
