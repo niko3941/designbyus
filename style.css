@@ -54,7 +54,6 @@ h2 {
 h2,
 h3 {
     font-family: 'Montserrat', sans-serif;
-    color: black;
 }
 
 p {
@@ -198,8 +197,9 @@ a {
 .item4 {
     grid-column: 3/6;
     grid-row: 2;
-    background-color: #deeff5;
+    background-color: #326367;
     padding: 1em;
+    color: #FFF;
 }
 
 #slider {
@@ -220,7 +220,7 @@ a {
 }
 
 .carousel-cell img {
-    height: 220px;
+    height: 240px;
     width: 100%;
 }
 
@@ -234,7 +234,7 @@ a {
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color: rgba(255, 228, 225, 0.9);
+    background-color: rgba(255, 236, 234, 0.9);
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -248,10 +248,11 @@ a {
 
 .overlay_text {
     font-weight: 700;
+    color: #FFF;
     font-family: 'Montserrat', sans-serif;
-    border: solid 1px #FFE4E1;
+    border: solid 1px #326367;
     padding: 10px 1em;
-    background-color: #FFF;
+    background-color: #326367;
     font-size: 18px;
     position: absolute;
     top: 50%;
@@ -404,7 +405,7 @@ s .flickity-button:active {
     width: 10px;
     height: 10px;
     margin: 0 8px;
-    background: #e3c1c5;
+    background: #ffe9e7;
     border-radius: 50%;
     opacity: 0.25;
     cursor: pointer;

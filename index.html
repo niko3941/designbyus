@@ -12,56 +12,59 @@
 
 <style>
     #baggrundsvideo {
-        z-index: 9;
         margin-top: 5px;
         max-width: 100%;
         margin: 0 auto;
         height: 550px;
         overflow: hidden;
-        opacity: 1;
         margin-bottom: 2em;
     }
 
     #myVideo {
+        position: relative;
         width: 100vw;
-        z-index: -1;
-    }
-
-    #background_layer {
-        background-color: rgba(248, 247, 216, 0.7);
     }
 
     .intro {
+        text-align: center;
+        border: solid 1px #FFF;
+        background-color: rgba(50, 99, 103, 0.9);
         color: #FFF;
         position: absolute;
-        top: 200px;
+        top: 180px;
         left: 16vw;
         right: 15vw;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        width: 55%;
-        margin: 0 auto;
-        font-size: 23px;
-        font-weight: 700;
+        padding: 3em 5em 7em 5em;
+        max-width: 1024px;
+        font-size: 21px;
+        font-weight: 400;
     }
 
-    .intro_see_our_design {
-        color: #FFF;
-        text-align: center;
+    .intro:before {
+        content: '‟';
         position: absolute;
-        top: 380px;
-        left: 16vw;
-        right: 16vw;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        font-size: 23px;
-        font-weight: 700;
+        top: 25px;
+        left: 3vw;
+        font-family: Lily Script One, sans-serif;
+        font-size: 10em;
+        color: #FFF;
+    }
+
+    .intro:after {
+        content: '„';
+        position: absolute;
+        bottom: 132px;
+        left: 60vw;
+        font-family: sans-serif;
+        font-size: 10em;
+        color: #FFF;
+        padding: 0;
     }
 
     #arrow {
         position: absolute;
-        top: 45vw;
-        left: 47vw;
+        top: 420px;
+        left: 48vw;
         cursor: pointer;
         padding: 1em 0;
         width: 5%;
@@ -143,21 +146,19 @@
 
     <div id="baggrundsvideo">
         <video autoplay muted loop id="myVideo">
-              <source src="img/1612splashvideo.mp4" type="video/mp4">
+              <source src="img/green_splashvideo.mp4" type="video/mp4">
             </video>
     </div>
+    <h2 class="intro">We try not to be a typical Scandinavian design company, by using a pallet of design solutions that are more colorful, eye catching and fun. We wish to push our aesthetics away from the mundane and tread in deeper waters, where success is harder to achieve, however greater the prize.</h2>
+
+    <a href="#see_our_design"><img id="arrow" class="bounce" src="img/arrow.png" alt="Navigation til kort over resturanter"></a>
+
     <div id="container">
-        <h2 class="intro">We try not to be a typical Scandinavian design company, by using a pallet of design solutions that are more colorful, eye catching and fun. We wish to push our aesthetics away from the mundane and tread in deeper waters, where success is harder to achieve, however greater the prize.</h2>
-        <h2 class="intro_see_our_design">See our design</h2>
-
-        <a href="#see_our_design"><img id="arrow" class="bounce" src="img/arrow.png" alt="Navigation til kort over resturanter"></a>
-
         <div id="forside_tekst">
             <div class="forside_tekstbox1">
                 <div class="item1">
                     <h2>Ballroom on the wall</h2>
                     <p>This is the Ballroom Ø20 pendent. The first of the Ballroom series and is by no surprise our most popular lamp. It fits any occasion at any location and spreads a humoristic curiosity in a cluster of colors or a simple row of smoked balls.</p>
-                    <h2></h2>
                     <p>The Ballroom series is by no surprise our most popular. It fits any occasion at any location and spreads a humoristic curiosity. This particular Ballroom is for the wall mounting – Perfect for the bedroom, hall or foyer. – Its time to get balls on the walls!</p>
                 </div>
                 <div class="item2">
@@ -169,29 +170,13 @@
                     <img src="img/stemning_produkt2.jpg" alt="Design By Us produkter">
                 </div>
                 <div class="item4">
-                    <h2>Ballroom on the wall</h2>
-                    <p>Dining chair with custom color velvet, quilted back pillow. Dark stained oak legs.. Comfort, to die for. Its popularity is increasing each year, even though it was originally designed for more than a decade ago. The design idea is inspired by the elevated arena of a circus ring. And the functionality of the chair is done so your tall and short friends both can rest their feet on the ring.</p>
-                    <h2></h2>
+                    <h2>The Skinny Bitch chair </h2>
+                    <p>Dining chair with custom color velvet, quilted back pillow. Dark stained oak legs.. Comfort, to die for. </p>
+                    <p>Its popularity is increasing each year, even though it was originally designed for more than a decade ago. The design idea is inspired by the elevated arena of a circus ring. And the functionality of the chair is done so your tall and short friends both can rest their feet on the ring.</p>
                     <p>A new fabric in our “bitch” series. This is a velvet version. Dark stained legs.</p>
                 </div>
             </div>
         </div>
-
-        <!--<div class="wrapper">
-            <section id="templateModtagerForside"></section>
-            <template id="produktTemplate">
-             <article id="indhold" class="indhold_produkter">
-               <a data-produktknap1 href=""><img class="produkter" src="" data-produktpic></a>
-               <a data-produktknap2 href=""><h2 data-produktnavn></h2></a>
-               <p data-produktpris></p>
-                <p class="produkt_beskrivelse" data-produktbeskrivelse></p>
-                <div class="knapper">
-                <a id="knap_read_more" data-produktknap3 href=""><button>Add to favorites</button></a>
-                <a id="knap_read_more" data-produktknap4 href=""><button>Take a look</button></a>
-                 </div>
-             </article>
-         </template>
-        </div>-->
     </div>
 
 
@@ -251,7 +236,6 @@
     <script src="sliderJS.js"></script>
     <script src="navigationJS.js"></script>
     <script src="indexJS.js"></script>
-    <script src="nyeprodukterJS.js"></script>
 </body>
 
 </html>
