@@ -9,7 +9,7 @@ async function hentMenu() {
 
 //HENT ANSATTE TIL ABOUT SIDEN
 let ansatte;
-let templateModtager = document.querySelector("#templateModtager");
+let templateModtager = document.querySelector("#templateModtagerAbout");
 let ansatTemplate = document.querySelector("#ansatTemplate");
 
 

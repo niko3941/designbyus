@@ -64,7 +64,7 @@ function visProdukter() {
             let klon = produktTemplate.cloneNode(true).content;
             klon.querySelector("[data-produktpic]").src = produkt.acf.main_photo.url;
             klon.querySelector("[data-produktnavn]").textContent = produkt.acf.product_name;
-            klon.querySelector("[data-produktbeskrivelse]").innerHTML = produkt.acf.product_description;
+            //klon.querySelector("[data-produktbeskrivelse]").innerHTML = produkt.acf.product_description;
             klon.querySelector("[data-produktknap1]").href = "produktmodtag.html?id=" + produkt.id;
             klon.querySelector("[data-produktknap2]").href = "produktmodtag.html?id=" + produkt.id;
             klon.querySelector("[data-produktknap3]").href = "produktmodtag.html?id=" + produkt.id;
@@ -110,11 +110,11 @@ function sorterVarious() {
 }
 
 //Når et menupunkt er valgt, så skift farver
-$('.produkt_link').each(function(){
-   $(this).click(function(){
-      $('.produkt_link').removeClass('selected');
-      $(this).addClass('selected');
-   })
+$('.produkt_link').each(function () {
+    $(this).click(function () {
+        $('.produkt_link').removeClass('selected');
+        $(this).addClass('selected');
+    })
 });
 
 
