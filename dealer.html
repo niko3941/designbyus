@@ -8,13 +8,103 @@
 </head>
 
 <body>
+
+    <style>
+        #becomedealer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+            max-width: 1024px;
+            margin: 0 auto;
+            margin-top: 5%;
+        }
+
+        #dealerkort {
+            grid-column: 1/2;
+            grid-row: 1;
+        }
+
+        #signup {
+            grid-column: 3/4;
+            grid-row: 1;
+            background-color: #eae8dc;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        input {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1em;
+            height: 40px;
+            margin: 5px;
+            width: 46%;
+        }
+
+        .submitknap {
+            text-align: center;
+            width: 172px;
+            padding: 10px;
+            margin-top: 5px;
+            background-color: #eaeaea;
+
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .dealerh3 {
+            text-align: center;
+        }
+    </style>
     <header>
         <div data-navigation></div>
     </header>
-    <script src="aboutJS.js"></script>
-    <script src="navigationJS.js"></script>
+    <div id="container">
+        <h3 class="dealerh3">BECOME OFFICIAL DESIGN BY US DEALER</h3>
+        <div id="becomedealer">
+
+            <div class="signup">
+                <p>We love to spread our products, so please if you have the desire.. Contact us for more info about becoming a official “DESIGN BY US” deale</p>
+                <form class="signupdealer" action="/action_page.php">
+
+                    <input class="input_companyname" type="text" value="  Company name"><br><br>
+
+
+                    <input class="input_contactperson" type="text" value="  Contact Person"><br><br>
+
+
+                    <input class="input_telephone" type="text" value="  Telephone"><br><br>
+
+                    <input class="input_email" type="text" value="  Email"><br><br>
+
+                    <input class="input_adress" type="text" value="  Adress"><br><br>
+
+                    <input class="input_postcode" type="text" value="  Postcode"><br><br>
+
+                    <input class="input_state" type="text" value="  State"><br><br>
+
+                    <input class="input_country" type="text" value="  Country"><br><br>
+
+
+                    <input class="submitknap" type="submit" value="Submit">
+                </form>
+
+            </div>
+            <div class="dealerkort"><img src="img/aboutbillede.png" alt="Kort over forhandlere"></div>
+        </div>
+
+
+
+    </div>
     <footer>
         <div data-footer></div>
     </footer>
+    <script src="aboutJS.js"></script>
+    <script src="navigationJS.js"></script>
 </body>
 </html>
