@@ -14,17 +14,27 @@
     }
 
     #contact_content {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap: 30px;
+        max-width: 1024px;
+        margin: 0 auto;
     }
 
     #contact_info {
-        flex-grow: 1;
-
+        grid-column: 1/4;
+        grid-row: 1;
+        background-color: rgba(248, 195, 226, 0.58);
+        padding-left: 5%;
     }
 
     #contact_us {
-        flex-grow: 2;
+        grid-column: 4/11;
+        grid-row: 1;
+        background-color: #c5f8ff;
+        padding-bottom: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     form {
@@ -34,20 +44,21 @@
 
     input {
         font-family: 'Quicksand', sans-serif;
+        font-size: 1em;
 
     }
 
     .firstname {
         flex-grow: 1;
-        width: 40%;
         height: 40px;
         margin-right: 20px;
+
     }
 
     .lastname {
         flex-grow: 1;
-        width: 40%;
         height: 40px;
+
     }
 
     .message {
@@ -89,13 +100,13 @@
                 <h2>Write us a message</h2>
                 <form class="kontaktos" action="/action_page.php">
 
-                    <input class="firstname" type="text" name="firstname" value="First name"><br>
+                    <input class="firstname" type="text" name="firstname" value="  First name"><br>
 
 
-                    <input class="lastname" type="text" name="lastname" value="Last name"><br><br>
+                    <input class="lastname" type="text" name="lastname" value="  Last name"><br><br>
 
 
-                    <input class="message" type="text" name="message" value="Type your message here"><br><br>
+                    <input class="message" type="text" name="message" value="  Type your message here"><br><br>
 
                     <input class="submitknap" type="text" value="Submit">
                 </form>
@@ -103,7 +114,7 @@
 
         </section>
         <div>
-            <h2>Find us here:</h2>
+            <h2>Find us here</h2>
             <div id="map"></div>
         </div>
 
