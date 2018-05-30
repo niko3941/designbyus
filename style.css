@@ -61,7 +61,7 @@ p {
     margin: 10px 0px;
 }
 
-a. {
+a {
     text-decoration: none;
 }
 
@@ -79,7 +79,7 @@ a. {
     padding-top: 1em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 90%;
+    max-width: 1024px;
     margin: 0 auto;
     grid-gap: 5px;
 }
@@ -120,7 +120,6 @@ a. {
     position: absolute;
     display: none;
     background-color: #FFF;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -129,7 +128,6 @@ a. {
     right: 0;
     display: none;
     background-color: #FFF;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -143,7 +141,7 @@ a. {
 
 .dropdown-content a:hover,
 .dropdown-content-right a:hover {
-    background-color: #f1f1f1
+    color: #326367;
 }
 
 .dropdown_shop:hover .dropdown-content,
@@ -267,6 +265,7 @@ a. {
     border: solid 1px #326367;
     padding: 10px 1em;
     background-color: #326367;
+    border-radius: 5px;
     font-size: 18px;
     position: absolute;
     top: 50%;
@@ -278,7 +277,6 @@ a. {
 
 
 /*------------SLIDER FRA BIBLIOTEK------------*/
-
 
 /*! Flickity v2.1.1
 https://flickity.metafizzy.co
@@ -308,7 +306,7 @@ https://flickity.metafizzy.co
 
 /* draggable */
 
-.flickity-enabled.is-draggable {
+/*.flickity-enabled.is-draggable {
     -webkit-tap-highlight-color: transparent;
     tap-highlight-color: transparent;
     -webkit-user-select: none;
@@ -316,6 +314,7 @@ https://flickity.metafizzy.co
     -ms-user-select: none;
     user-select: none;
 }
+*/
 
 .flickity-enabled.is-draggable .flickity-viewport {
     cursor: move;
@@ -442,19 +441,29 @@ s .flickity-button:active {
     padding: 1em 0;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    max-width: 90%;
-    margin: 0 auto;
-    grid-gap: 20px;
+    grid-gap: 2em;
     cursor: pointer;
 }
 
 #billede_sortering img {
-    width: 100%;
+    width: 95%;
+    border: solid 5px #326367;
 }
 
 .produkter {
+    height: 240px;
     width: 100%;
     cursor: pointer;
+}
+
+.indhold_produkter h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+}
+
+.selected {
+    opacity: 0.6;
 }
 
 .wrapper {
@@ -465,25 +474,21 @@ s .flickity-button:active {
 .indhold_produkter {
     text-align: center;
     padding: 10px;
-    /*	border: 2px solid #dfc7e3;*/
-    /*border-radius: 0px 40px 0px 40px;*/
-    border-left: 3px solid #f5edf5;
-    border-right: 3px solid #f5edf5;
+    border: 5px solid #ffecea;
 }
 
 #knap_read_more button {
-    width: 100%;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 10px;
-    background-color: #B79494;
-    border-radius: 8px;
-    padding: 5px;
-    cursor: pointer;
+    margin: 3px;
+    width: 45%;
+    border: solid 1px #326367;
+    background-color: #326367;
+    color: #FFF;
+    border-radius: 3px;
+    padding: 6px 12px;
 }
 
 #knap_read_more button:hover {
-    background-color: #E5D9D8;
+    background-color: #326367;
     color: black;
 }
 
@@ -492,5 +497,5 @@ s .flickity-button:active {
     grid-template-columns: repeat(2, 1fr);
     grid-column: 1 / 4;
     grid-row: 1;
-    grid-gap: 5px;
+    grid-gap: 10px;
 }
