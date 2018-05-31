@@ -9,7 +9,33 @@
     <title>Contact Us - Design By Us</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <style>
+    .contactgrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1024px;
+        margin: 0 auto;
+        grid-gap: 5px;
+    }
+
+    .contactimg {
+        grid-column: 3/3;
+        grid-row: 1;
+        background-color: grey;
+        text-align: center;
+        color: white;
+    }
+
+    .contactimg img {
+        width: 80%;
+    }
+
+    .contactcontent {
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+
     #backgroundcontact {
         width: 100%;
         background-color: white;
@@ -121,6 +147,34 @@
                         <input class="submitknap" type="submit" value="Submit">
                     </form>
                 </div>
+
+            </section>
+
+            <section id="press">
+                <div class="contactbaggrund">
+                    <h2>PRESS</h2>
+                    <div class="contactgrid">
+
+                        <div class="contactcontent">
+
+                            <p>We have been in the business for a long time, and we are very proud of how well the press treat us. Please find our press releases here...</p>
+
+                        </div>
+
+                        <div class="contactimg">
+
+                            <h3>PRESS CONTACT</h3>
+                            <img src="img/linesh.jpg" alt="billede af line">
+                            <p>Line Kirstin Pries-Reinhold <br> Tel. +45 23 43 56 37 <br> line@design-by-us.com
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
 
             </section>
             <div>
