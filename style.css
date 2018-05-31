@@ -68,6 +68,7 @@ a {
 }
 
 .h3imidten {
+    text-transform: uppercase;
     text-align: center;
 }
 
@@ -303,7 +304,6 @@ a {
 
 /*------------SLIDER FRA BIBLIOTEK------------*/
 
-
 /*! Flickity v2.1.1
 https://flickity.metafizzy.co
 ---------------------------------------------- */
@@ -331,17 +331,6 @@ https://flickity.metafizzy.co
 
 
 /* draggable */
-
-
-/*.flickity-enabled.is-draggable {
-    -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-*/
 
 .flickity-enabled.is-draggable .flickity-viewport {
     cursor: move;
