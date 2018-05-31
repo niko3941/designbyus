@@ -6,7 +6,6 @@ body {
 #container {
     max-width: 1024px;
     margin: 0 auto;
-    background-color: white;
     border-top: solid 35px #fff;
 }
 
@@ -72,6 +71,7 @@ a {
     text-transform: uppercase;
     text-align: center;
 }
+
 
 /*-----MENU STYLING START-------*/
 
