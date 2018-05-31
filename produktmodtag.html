@@ -24,12 +24,25 @@
         height: 270px;
     }
 
+    #add_to_basket {
+        cursor: pointer;
+        float: right;
+        font-weight: 700;
+        color: #FFF;
+        font-family: 'Montserrat', sans-serif;
+        border: solid 1px #326367;
+        padding: 10px 1em;
+        background-color: #326367;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
     .blank1,
     .blank2,
     .blank3 {
         float: left;
-        width: 25%;
-        padding: 10px;
+        width: 27%;
+        padding: 11px;
     }
 
     #produktindhold {
@@ -55,7 +68,6 @@
         grid-row: 1;
         color: #326267;
     }
-
 </style>
 
 <body>
@@ -74,6 +86,7 @@
                 </div>
 
                 <div class="produktbeskrivelser">
+                    <a href="#"><button id="add_to_basket">Add to basket</button></a>
                     <h2 data-produktnavn></h2>
                     <h3 data-produktpris></h3>
                     <p data-produktbeskrivelse></p>
@@ -82,52 +95,52 @@
             </article>
 
 
-            <div id="backgroundforside1">
-                <div id="slider">
-                    <div class="carousel" data-flickity='{ "wrapAround": true }'>
-                        <div class="carousel-cell">
-                            <img src="img/produkt3.jpg" alt="Ballroom lamp in purple">
-                            <h3>Xl Ballroom in purple</h3>
-                            <p>4390 DKK</p>
-                            <div class="overlay">
-                                <div class="overlay_text">Take a look</div>
-                            </div>
+           <h3 class="h3imidten">Have you seen our lastet products?</h3>
+            <div id="slider">
+                <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                    <div class="carousel-cell">
+                        <img src="img/produkt3.jpg" alt="Ballroom lamp in purple">
+                        <h3>Xl Ballroom in purple</h3>
+                        <p>4390 DKK</p>
+                        <div class="overlay">
+                            <div class="overlay_text">Take a look</div>
                         </div>
-                        <div class="carousel-cell">
-                            <img src="img/produkt2.jpg" alt="Ballroom lamp in pink">
-                            <h3>Xl Ballroom in pink</h3>
-                            <p>4390 DKK</p>
-                            <div class="overlay">
-                                <div class="overlay_text">Take a look</div>
-                            </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="img/produkt2.jpg" alt="Ballroom lamp in pink">
+                        <h3>Xl Ballroom in pink</h3>
+                        <p>4390 DKK</p>
+                        <div class="overlay">
+                            <div class="overlay_text">Take a look</div>
                         </div>
-                        <div class="carousel-cell">
-                            <img src="img/produkt6.jpg" alt="Skinny bitch in leather">
-                            <h3>Xl Ballroom in amber</h3>
-                            <p>4390 DKK</p>
-                            <div class="overlay">
-                                <div class="overlay_text">Take a look</div>
-                            </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="img/produkt6.jpg" alt="Skinny bitch in leather">
+                        <h3>Xl Ballroom in amber</h3>
+                        <p>4390 DKK</p>
+                        <div class="overlay">
+                            <div class="overlay_text">Take a look</div>
                         </div>
-                        <div class="carousel-cell">
-                            <img src="img/produkt4.jpg" alt="Fat bitch in leather">
-                            <h3>Xl Ballroom in army</h3>
-                            <p>4390 DKK</p>
-                            <div class="overlay">
-                                <div class="overlay_text">Take a look</div>
-                            </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="img/produkt4.jpg" alt="Fat bitch in leather">
+                        <h3>Xl Ballroom in army</h3>
+                        <p>4390 DKK</p>
+                        <div class="overlay">
+                            <div class="overlay_text">Take a look</div>
                         </div>
-                        <div class="carousel-cell">
-                            <img src="img/produkt1.jpg" alt="Ballroom lamp in grey">
-                            <h3>Xl Ballroom in grey</h3>
-                            <p>4390 DKK</p>
-                            <div class="overlay">
-                                <div class="overlay_text">Take a look</div>
-                            </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="img/produkt1.jpg" alt="Ballroom lamp in grey">
+                        <h3>Xl Ballroom in grey</h3>
+                        <p>4390 DKK</p>
+                        <div class="overlay">
+                            <div class="overlay_text">Take a look</div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
