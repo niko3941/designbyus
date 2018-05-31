@@ -75,6 +75,19 @@ a {
 
 /*-----MENU STYLING START-------*/
 
+.header_ikoner {
+    grid-row: 1;
+    grid-column: 3/4;
+    margin-top: 1.2em;
+}
+
+.header_ikoner img {
+    float: right;
+    z-index: 10;
+    padding: 5px;
+    width: 10%;
+}
+
 .dbulogo {
     text-decoration: none;
     grid-column: 2/3;
@@ -160,11 +173,10 @@ a {
     text-align: right;
 }
 
-.dropdown_shop:hover .dropbtn,
+/*.dropdown_shop:hover .dropbtn,
 .dropdown_about:hover .dropbtn {
     background-color: #FFF;
-}
-
+}*/
 
 /*-----------FORSIDE-----------*/
 
