@@ -120,7 +120,7 @@ a {
 }
 
 .dropbtn {
-    color: #FFF;
+    color: #000;
     background: none;
     min-width: 140px;
     padding: 14px;
@@ -130,27 +130,27 @@ a {
 }
 
 .dropdown_shop {
-    background-color: #000;
+    background-color: #fff;
     cursor: pointer;
     display: inline-block;
     max-width: 30%;
     position: absolute;
     top: 15px;
     left: 10px;
-    border-radius: 5px;
+    background-color: whitesmoke;
 }
 
 .dropdown_about {
-    background-color: #000;
+    background-color: #fff;
     cursor: pointer;
     display: inline-block;
     max-width: 30%;
     position: absolute;
     top: 15px;
     right: 0px;
-    border-radius: 5px;
     right: 10px;
     text-align: right;
+    background-color: whitesmoke;
 }
 
 .dropdown-content {
@@ -182,7 +182,7 @@ a {
 
 .dropdown-content a:hover,
 .dropdown-content-right a:hover {
-    color: #326367;
+    background-color: whitesmoke;
 }
 
 .dropdown_shop:hover .dropdown-content,
