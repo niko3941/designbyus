@@ -540,6 +540,16 @@ s .flickity-button:active {
     padding: 10px 12px;
 }
 
+#knap_favorites button {
+    border-radius: 5px;
+    margin: 3px;
+    width: 45%;
+    background-color: #e1d0d1;
+    border: solid 1px #e1d0d1;
+    color: #FFF;
+    padding: 10px 12px;
+}
+
 #knap_read_more button:hover {
     background-color: #7f7f7f;
     border: solid 1px #7f7f7f;
