@@ -120,7 +120,7 @@ a {
 }
 
 .dropbtn {
-    color: #FFF;
+    color: #000;
     background: none;
     min-width: 140px;
     padding: 14px;
@@ -130,22 +130,29 @@ a {
 }
 
 .dropdown_shop {
-    background-color: #316064;
+    background-color: #fff;
     cursor: pointer;
     display: inline-block;
     max-width: 30%;
     position: absolute;
     top: 15px;
+    left: 10px;
+    background-color: whitesmoke;
+    border-radius: 5px;
 }
 
 .dropdown_about {
-    background-color: #316064;
+    background-color: #fff;
     cursor: pointer;
     display: inline-block;
     max-width: 30%;
     position: absolute;
     top: 15px;
     right: 0px;
+    right: 10px;
+    text-align: right;
+    background-color: whitesmoke;
+    border-radius: 5px;
 }
 
 .dropdown-content {
@@ -177,7 +184,7 @@ a {
 
 .dropdown-content a:hover,
 .dropdown-content-right a:hover {
-    color: #326367;
+    background-color: whitesmoke;
 }
 
 .dropdown_shop:hover .dropdown-content,
@@ -188,6 +195,7 @@ a {
 .dropdown_about:hover .dropdown-content {
     text-align: right;
 }
+
 
 /*.dropdown_shop:hover .dropbtn,
 .dropdown_about:hover .dropbtn {
@@ -490,9 +498,15 @@ s .flickity-button:active {
 
 #billede_sortering img {
     width: 95%;
-    filter: grayscale(70%);
+    filter: grayscale(60%);
     /*filter: grayscale(50%);*/
     /*	border: solid 5px #326367;*/
+}
+
+#billede_sortering img:hover {
+    width: 95%;
+    filter: grayscale(0%);
+    box-shadow: 0px 0px 3px 1px grey;
 }
 
 .produkter {
@@ -509,6 +523,7 @@ s .flickity-button:active {
 
 .selected img {
     filter: grayscale(0%) !important;
+    box-shadow: 0px 0px 3px 1px grey;
 }
 
 .wrapper {
@@ -528,6 +543,16 @@ s .flickity-button:active {
     width: 45%;
     background-color: #326367;
     border: solid 1px #326367;
+    color: #FFF;
+    padding: 10px 12px;
+}
+
+#knap_favorites button {
+    border-radius: 5px;
+    margin: 3px;
+    width: 45%;
+    background-color: #e1d0d1;
+    border: solid 1px #e1d0d1;
     color: #FFF;
     padding: 10px 12px;
 }

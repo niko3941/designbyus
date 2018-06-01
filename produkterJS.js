@@ -93,6 +93,7 @@ function sorterSeating() {
     cat = 4;
     templateModtager.innerHTML = "";
     visProdukter();
+    document.querySelector("#sorter_seating").addClass("selected");
 }
 
 function sorterTables() {
