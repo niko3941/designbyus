@@ -130,22 +130,27 @@ a {
 }
 
 .dropdown_shop {
-    background-color: #316064;
+    background-color: #000;
     cursor: pointer;
     display: inline-block;
     max-width: 30%;
     position: absolute;
     top: 15px;
+    left: 10px;
+    border-radius: 5px;
 }
 
 .dropdown_about {
-    background-color: #316064;
+    background-color: #000;
     cursor: pointer;
     display: inline-block;
     max-width: 30%;
     position: absolute;
     top: 15px;
     right: 0px;
+    border-radius: 5px;
+    right: 10px;
+    text-align: right;
 }
 
 .dropdown-content {
@@ -189,10 +194,12 @@ a {
     text-align: right;
 }
 
+
 /*.dropdown_shop:hover .dropbtn,
 .dropdown_about:hover .dropbtn {
     background-color: #FFF;
 }*/
+
 
 /*-----------FORSIDE-----------*/
 
@@ -330,6 +337,7 @@ a {
 
 
 /*------------SLIDER FRA BIBLIOTEK------------*/
+
 
 /*! Flickity v2.1.1
 https://flickity.metafizzy.co
