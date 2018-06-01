@@ -16,24 +16,32 @@
         grid-template-columns: repeat(3, 1fr);
         max-width: 1024px;
         margin: 0 auto;
-        grid-gap: 5px;
+        grid-gap: 2em;
     }
 
-    .contactimg {
+    .press2 {
+
+        grid-column: 1/1;
+        grid-row: 1;
+    }
+
+    .press1 {
+
+        grid-column: 2/2;
+        grid-row: 1;
+    }
+
+    .press1 img,
+    .press2 img {
+        width: 100%;
+    }
+
+    .press3 {
+        padding: 1em;
         grid-column: 3/3;
         grid-row: 1;
-        background-color: grey;
-        text-align: center;
-        color: white;
-    }
-
-    .contactimg img {
-        width: 80%;
-    }
-
-    .contactcontent {
-        grid-column: 1/3;
-        grid-row: 1;
+        background-color: #e1d0d1;
+        color: #604564;
     }
 
     #contact_content {
@@ -49,16 +57,16 @@
         grid-column: 1/4;
         grid-row: 1;
         background-color: #e1d0d1;
-        padding-left: 5%;
+        color: #604564;
+        padding: 1em;
     }
 
     #contact_us {
         grid-column: 4/11;
         grid-row: 1;
         background-color: #bdcecd;
-        padding-bottom: 5%;
-        padding-left: 5%;
-        padding-right: 5%;
+        color: #326367;
+        padding: 1em;
     }
 
     form {
@@ -83,18 +91,22 @@
     }
 
     .message {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        border: 0;
+        margin-top: 1em;
         padding-bottom: 50px;
         width: 100%;
         height: 40px;
     }
 
     .submitknap {
-        width: 20%;
-        padding: 10px;
-        margin-top: 5px;
-        background-color: #eaeaea;
+        margin-top: 1em;
+        color: #FFF;
+        border: solid 1px #326367;
+        padding: 0.5em 1em;
+        background-color: #326367;
+        border-radius: 5px;
+        font-size: 16px;
+        min-width: 130px;
     }
 
     #map {
@@ -102,6 +114,7 @@
         max-width: 1024px;
         height: 300px;
         margin-bottom: 50px;
+        filter: grayscale(70%);
     }
 </style>
 
@@ -111,6 +124,7 @@
     </header>
 
     <div id="container">
+        <h3 class="h3imidten">Contact</h3>
         <section id="contact_content">
             <div id="contact_info">
                 <h2>Where to find us:</h2>
@@ -125,54 +139,45 @@
                 <h2>Write us a message</h2>
                 <form class="kontaktos" action="/action_page.php">
 
-                    <input class="firstname" type="text" name="firstname" value="  First name"><br>
+                    <input class="firstname" type="text" name="firstname" value="  First name">
 
+                    <input class="lastname" type="text" name="lastname" value="  Last name">
 
-                    <input class="lastname" type="text" name="lastname" value="  Last name"><br><br>
-
-
-                    <input class="message" type="text" name="message" value="  Type your message here"><br><br>
-
+                    <input class="message" type="text" name="message" value="  Type your message here">
                     <input class="submitknap" type="submit" value="Submit">
                 </form>
             </div>
 
         </section>
 
-        <section id="press">
-            <div class="contactbaggrund">
-                <h2>PRESS</h2>
-                <div class="contactgrid">
-
-                    <div class="contactcontent">
-
-                        <p>We have been in the business for a long time, and we are very proud of how well the press treat us. Please find our press releases here...</p>
-
-                    </div>
-
-                    <div class="contactimg">
-
-                        <h3>PRESS CONTACT</h3>
-                        <img src="img/linesh.jpg" alt="billede af line">
-                        <p>Line Kirstin Pries-Reinhold <br> Tel. +45 23 43 56 37 <br> line@design-by-us.com
-                        </p>
-
-                    </div>
-
-                </div>
-            </div>
-
-
-
-
-        </section>
-        <div>
-            <h2>Find us here</h2>
+        <div id="googlemap">
+            <h3>Find us here</h3>
             <div id="map"></div>
         </div>
 
+        <section id="press">
+            <div class="contactbaggrund">
+                <h3>PRESS</h3>
+                <div class="contactgrid">
 
+                    <div class="press1">
+                        <img src="img/press2.jpg" alt="Design By Us møbler">
+                    </div>
 
+                    <div class="press2">
+                        <img src="img/press1.jpg" alt="Design By Us møbler">
+                    </div>
+
+                    <div class="press3">
+                        <h2>Press contact</h2>
+                        <p>We have been in the business for a long time, and we are very proud of how well the press treat us. Please find our press releases here...</p>
+                        <p class="bold">Line Kirstin Pries-Reinhold <br> Tel. +45 23 43 56 37 <br> line@design-by-us.com
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <footer>

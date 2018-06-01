@@ -27,7 +27,7 @@ function visAnsatte() {
     ansatte.forEach(ansat => {
 
         let klon = ansatTemplate.cloneNode(true).content;
-        klon.querySelector("[data-ansatpic]").src = ansat.acf.photo.url;
+        //klon.querySelector("[data-ansatpic]").src = ansat.acf.photo.url;
         klon.querySelector("[data-ansatnavn]").textContent = ansat.acf.name;
         klon.querySelector("[data-ansatbeskrivelse]").innerHTML = ansat.acf.description;
         klon.querySelector("[data-ansatemail]").innerHTML = "Email: " + ansat.acf.email;

@@ -4,6 +4,7 @@ body {
 }
 
 #container {
+    padding-top: 4em;
     max-width: 1024px;
     margin: 0 auto;
     border-top: solid 35px #fff;
@@ -63,6 +64,10 @@ p {
     margin: 10px 0px;
 }
 
+.bold {
+    font-weight: 700;
+}
+
 a {
     text-decoration: none;
 }
@@ -76,7 +81,7 @@ a {
 /*-----MENU STYLING START-------*/
 
 .header_ikoner {
-    padding-right: 1em;
+    padding-right: 10em;
     grid-row: 1;
     grid-column: 3/4;
     margin-top: 1.2em;
@@ -86,7 +91,7 @@ a {
     float: right;
     z-index: 10;
     padding: 5px;
-    width: 10%;
+    width: 33px;
 }
 
 .dbulogo {
@@ -97,10 +102,14 @@ a {
 }
 
 .top_menu {
-    padding-top: 1em;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    border-bottom: solid 1px #7f7f7f;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 1024px;
+    width: 100%;
     margin: 0 auto;
     grid-gap: 5px;
 }
@@ -111,33 +120,37 @@ a {
 }
 
 .dropbtn {
+    color: #FFF;
     background: none;
-    min-width: 160px;
-    padding: 16px;
+    min-width: 140px;
+    padding: 14px;
     font-size: 16px;
     border: none;
     cursor: pointer;
 }
 
 .dropdown_shop {
+    background-color: #316064;
     cursor: pointer;
     display: inline-block;
     max-width: 30%;
     position: absolute;
-    top: 30px;
-    left: 16px;
+    top: 15px;
 }
 
 .dropdown_about {
+    background-color: #316064;
     cursor: pointer;
     display: inline-block;
     max-width: 30%;
     position: absolute;
-    top: 30px;
-    right: 16px;
+    top: 15px;
+    right: 0px;
 }
 
 .dropdown-content {
+    font-size: 14px;
+    width: 140px;
     position: absolute;
     display: none;
     background-color: #FFF;
@@ -145,6 +158,8 @@ a {
 }
 
 .dropdown-content-right {
+    font-size: 14px;
+    width: 140px;
     position: absolute;
     right: 0;
     display: none;
@@ -254,7 +269,7 @@ a {
 
 #slider {
     width: 1024px;
-    margin: 0 auto 300px auto;
+    margin: 0 auto;
     padding-bottom: 2em;
     background-color: white;
 }
@@ -264,9 +279,8 @@ a {
     margin-top: 2em;
     padding: 1em;
     border: solid 1px #E7DADA;
-    height: 300px;
-    width: 27.5%;
-    margin: 1em;
+    width: 28.5%;
+    margin: 2em 10px 10px 10px;
     border-radius: 2px;
 }
 
@@ -383,7 +397,7 @@ s .flickity-button:active {
 }
 
 .flickity-button-icon {
-    background-color: #E7DADA;
+    background-color: #e1d0d1;
     fill: #FFF;
     border-radius: 50%;
     padding: 1em;
@@ -453,7 +467,7 @@ s .flickity-button:active {
     width: 10px;
     height: 10px;
     margin: 0 8px;
-    background: #ffe9e7;
+    background: #e1d0d1;
     border-radius: 50%;
     opacity: 0.25;
     cursor: pointer;
@@ -476,6 +490,7 @@ s .flickity-button:active {
 
 #billede_sortering img {
     width: 95%;
+    filter: grayscale(70%);
     /*filter: grayscale(50%);*/
     /*	border: solid 5px #326367;*/
 }
@@ -489,11 +504,11 @@ s .flickity-button:active {
 .indhold_produkter h2 {
     margin: 0;
     font-size: 18px;
-    color: #000;
+    color: #326367;
 }
 
 .selected img {
-    filter: grayscale(70%);
+    filter: grayscale(0%) !important;
 }
 
 .wrapper {
@@ -504,20 +519,22 @@ s .flickity-button:active {
 .indhold_produkter {
     text-align: center;
     padding: 10px;
-    border: 1px solid #E7DADA;
+    border: 1px solid #e1d0d1;
 }
 
 #knap_read_more button {
+    border-radius: 5px;
     margin: 3px;
     width: 45%;
-    /*	border: solid 1px #326367;*/
-    background-color: #b28f8f;
+    background-color: #326367;
+    border: solid 1px #326367;
     color: #FFF;
     padding: 10px 12px;
 }
 
 #knap_read_more button:hover {
-    background-color: #262424;
+    background-color: #7f7f7f;
+    border: solid 1px #7f7f7f;
     color: white;
 }
 

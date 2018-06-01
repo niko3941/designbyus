@@ -12,7 +12,7 @@
 
 <style>
     #container {
-        margin: 0 auto 300px auto;
+        margin: 0 auto;
     }
 
     #aboutvideo {
@@ -38,6 +38,7 @@
         grid-row: 1;
         padding: 1em;
         background-color: #e1d0d1;
+        color: #604564;
     }
 
     .theteam {
@@ -49,6 +50,7 @@
         grid-column: 6/8;
         grid-row: 2;
         background-color: #bdcecd;
+        color: #326367;
         padding: 1em;
     }
 
@@ -69,13 +71,15 @@
         grid-gap: 35px;
     }
 
-    .abouth3 {
-        text-align: center;
+    .indhold_ansatte {
+        padding: 1em;
+        background-color: #bdcecd;
+        color: #326367;
     }
 
-    #backgroundforside2 {
-        width: 100%;
-        background-color: white;
+    .indhold_ansatte:nth-child(odd) {
+        background: #e1d0d1;
+        color: #604564;
     }
 </style>
 
@@ -84,44 +88,40 @@
         <div data-navigation></div>
     </header>
 
-    <div id="backgroundforside2">
-        <div id="container">
-
-            <h3 class="h3imidten">ABOUT</h3>
-            <div id="aboutdesignbyus">
-                <div class="abouttext">
-
-                    <p>Design by Us is a multidisciplinary design studio, specializing in total design solutions and offers complete interior concepts for both the residential and the commercial market. Through their imaginative and untraditional approach to interior concepts, products and furniture they have created their own design vocabulary.<br> A design team of energetic individuals are the force behind the company’s constant development. Here inspiration is derived from modern trends and personal values, which are used in their design schemes, along with a good dose of humour and curiosity, this has become a trademark for Design by Us’s unique designs. </p>
-                </div>
-                <div class="theteam">
-                    <iframe class="virksomhedsvideo" src="https://www.youtube.com/embed/8sdlWY6PFWY?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media"></iframe>
-                </div>
-                <div class="theteam2">
-                    <img src="img/theteam.jpg" alt="billede af møbler">
-                </div>
-
-
-                <div class="abouttext2">
-                    <p>Their line of furniture and products consists of tables, chairs and lighting, which are distributed by retailers all over Europe.<br><br> ‘ We try not to be a typical Scandinavian design company, by using a pallet of design solutions that are more colourful, eye catching and fun. We wish to push our aesthetics away from the mundane and tread in deeper waters, where success is harder to achieve, however greater the prize.’ <br><br> – DESIGN BY US</p>
-                </div>
+    <div id="container">
+        <h3 class="h3imidten">ABOUT</h3>
+        <div id="aboutdesignbyus">
+            <div class="abouttext">
+                <p>Design by Us is a multidisciplinary design studio, specializing in total design solutions and offers complete interior concepts for both the residential and the commercial market. Through their imaginative and untraditional approach to interior concepts, products and furniture they have created their own design vocabulary.</p>
+                <p> A design team of energetic individuals are the force behind the company’s constant development. Here inspiration is derived from modern trends and personal values, which are used in their design schemes, along with a good dose of humour and curiosity, this has become a trademark for Design by Us’s unique designs. </p>
             </div>
-            <div id="ansatte">
-                <h3 class="h3imidten">OUR TEAM</h3>
-                <section id="templateModtagerAbout">
-                </section>
+            <div class="theteam">
+                <iframe class="virksomhedsvideo" src="https://www.youtube.com/embed/8sdlWY6PFWY?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
             </div>
-            <template id="ansatTemplate">
-       <article id="indhold" class="indhold_ansatte">
+            <div class="theteam2">
+                <img src="img/theteam.jpg" alt="billede af møbler">
+            </div>
 
-          <img class="ansatte" src="" data-ansatpic>
-           <h2 data-ansatnavn></h2>
-           <p data-ansatbeskrivelse></p>
-            <p data-ansatemail></p>
-            <p data-ansatnummer></p>
 
-            </article>
-    </template>
+            <div class="abouttext2">
+                <p>Their line of furniture and products consists of tables, chairs and lighting, which are distributed by retailers all over Europe.<br><br> ‘ We try not to be a typical Scandinavian design company, by using a pallet of design solutions that are more colourful, eye catching and fun. We wish to push our aesthetics away from the mundane and tread in deeper waters, where success is harder to achieve, however greater the prize.’ <br><br> – DESIGN BY US</p>
+            </div>
         </div>
+        <div id="ansatte">
+            <h3 class="h3imidten">OUR TEAM</h3>
+            <section id="templateModtagerAbout">
+            </section>
+        </div>
+        <template id="ansatTemplate">
+            <article id="indhold" class="indhold_ansatte">
+                <!--<img class="ansatte" src="" data-ansatpic>-->
+                <h2 data-ansatnavn></h2>
+                <p class="bold" data-ansatbeskrivelse></p>
+                <p data-ansatemail></p>
+                <p data-ansatnummer></p>
+            </article>
+        </template>
     </div>
 
     <footer>
