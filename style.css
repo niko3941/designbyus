@@ -261,14 +261,14 @@ a {
     cursor: pointer;
     padding: 1em 0;
     width: 5%;
-    animation-name: arrow_animation;
+    /*animation-name: arrow_animation;
     animation-duration: 0.6s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
-    animation-timing-function: linear;
+    animation-timing-function: linear;*/
 }
 
-@keyframes arrow_animation {
+/*@keyframes arrow_animation {
     0% {
         top: 30vw;
     }
@@ -276,17 +276,7 @@ a {
     100% {
         top: 33vw;
     }
-}
-
-#backgroundforside {
-    width: 100%;
-    background-color: white;
-}
-
-#backgroundforside1 {
-    width: 100%;
-    background-color: white;
-}
+}*/
 
 .seeourdesign {
     text-align: center;
