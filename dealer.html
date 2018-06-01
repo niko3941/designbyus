@@ -52,23 +52,26 @@
             width: 45%;
         }
 
-        .submitknap {
-            margin-top: 1em;
-            color: #FFF;
-            border: solid 1px #326367;
-            padding: 0.5em 1em;
-            background-color: #326367;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
         img {
             width: 100%;
         }
+
     </style>
     <header>
         <div data-navigation></div>
     </header>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tak for din tilmelding!</h2>
+            <p>Du nu fremover modtage<br> spænende nyheder fra Food8.<br></p>
+            <p>Vi glæder os dele det seneste nye inden forfood8s restauranter, madbutikker og barer, samt forkæle dig med gode tilbud og sjove konkurrencer.</p>
+        </div>
+    </div>
+
     <div id="container">
         <h3 class="h3imidten">BECOME OFFICIAL DESIGN BY US DEALER</h3>
         <div id="becomedealer">
@@ -92,8 +95,7 @@
 
                     <input class="input_country" type="text" value="  Country">
 
-                    <button class="submitknap">Send request</button>
-                    <!--<input class="submitknap" type="submit" value="Submit">-->
+                    <a href="#" id="myBtn"> Tilmeld</a>
                 </form>
 
             </div>
@@ -106,6 +108,7 @@
     <footer>
         <div data-footer></div>
     </footer>
+    <script src="modalJS.js"></script>
     <script src="aboutJS.js"></script>
     <script src="navigationJS.js"></script>
 </body>
