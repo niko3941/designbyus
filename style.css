@@ -138,6 +138,7 @@ a {
     top: 15px;
     left: 10px;
     background-color: whitesmoke;
+    border-radius: 5px;
 }
 
 .dropdown_about {
@@ -151,6 +152,7 @@ a {
     right: 10px;
     text-align: right;
     background-color: whitesmoke;
+    border-radius: 5px;
 }
 
 .dropdown-content {
