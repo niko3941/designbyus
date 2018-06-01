@@ -66,74 +66,23 @@
         cursor: pointer;
         padding: 1em 0;
         width: 5%;
-        @include animation(bounce 2s infinite);
+        animation-name: arrow_animation;
+        animation-duration: 0.8s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: linear;
     }
 
-    .bounce {
-        -moz-animation: bounce 3s infinite;
-        -webkit-animation: bounce 3s infinite;
-        animation: bounce 3s infinite;
-    }
+    @keyframes arrow_animation {
+        0% {
+            top: 26vw;
+        }
 
-    @-webkit-keyframes bounce {
-        0%,
-        20%,
-        50%,
-        80%,
         100% {
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-        }
-        40% {
-            -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-        }
-        60% {
-            -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
+            top: 29vw;
         }
     }
 
-    @keyframes bounce {
-        0%,
-        20%,
-        50%,
-        80%,
-        100% {
-            -moz-transform: translateY(0);
-            -ms-transform: translateY(0);
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-        }
-        40% {
-            -moz-transform: translateY(-20px);
-            -ms-transform: translateY(-20px);
-            -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-        }
-        60% {
-            -moz-transform: translateY(-15px);
-            -ms-transform: translateY(-15px);
-            -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
-        }
-    }
-
-    @include keyframes(bounce) {
-        0%,
-        20%,
-        50%,
-        80%,
-        100% {
-            @include transform(translateY(0));
-        }
-        40% {
-            @include transform(translateY(-20px));
-        }
-        60% {
-            @include transform(translateY(-15px));
-        }
-    }
 </style>
 
 <body>
