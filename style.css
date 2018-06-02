@@ -712,7 +712,6 @@ s .flickity-button:active {
 
 #aboutdesignbyus {
     display: grid;
-    grid-template-columns: repeat (8, 1fr);
     grid-gap: 35px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -962,7 +961,6 @@ img {
 
 #becomedealer {
     display: grid;
-    grid-template-columns: repeat (8, 1fr);
     grid-gap: 35px;
     margin-top: 20px;
     margin-bottom: 20px;
