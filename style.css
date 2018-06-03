@@ -336,7 +336,7 @@ top: 33vw;
             }
 
             #slider {
-                width: 80%;
+                max-width: 1024px;
                 margin: 0 auto;
                 padding-bottom: 2em;
                 background-color: white;
@@ -1397,22 +1397,8 @@ https://flickity.metafizzy.co
                 }
 
                 #slider {
-                    width: 95%;
-                    margin: 0 auto;
-                    padding-bottom: 2em;
-                    background-color: white;
+                    display: none;
                 }
-
-                .carousel-cell {
-                    text-align: center;
-                    margin-top: 2em;
-                    padding: 1em;
-                    border: solid 1px #E7DADA;
-                    width: 100%;
-                    margin: 2em 10px 10px 10px;
-                    border-radius: 2px;
-                }
-
                 @media screen and (min-width: 1px) and (max-width: 627px) and (orientation: landscape) {
                     * {}
                 }
