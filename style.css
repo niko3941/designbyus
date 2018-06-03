@@ -1350,9 +1350,24 @@ https://flickity.metafizzy.co
             }
 
             .abouttext{
-                display: block;
+                 grid-column: 1/5;
+                 grid-row: 2;
             }
 
+            .theteam{
+                 grid-column: 1/5;
+                 grid-row: 1;
+            }
+              .theteam2{
+                 grid-column: 1/5;
+                 grid-row: 3;
+            }
+
+
+              .abouttext2{
+                 grid-column: 1/5;
+                 grid-row: 4;
+            }
 
             @media screen and (min-width: 1px) and (max-width: 627px) and (orientation: landscape) {
                 * {}
