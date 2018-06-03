@@ -1173,6 +1173,29 @@ https://flickity.metafizzy.co
                     padding: 6px 12px;
                 }
 
+
+                /*---------Shades By Us-----------*/
+
+                #explainer {
+                    margin-top: 10px;
+                    max-width: 100%;
+                    margin: 0 auto;
+                }
+
+                #shadesVideo {
+                    position: relative;
+                    width: 100%;
+
+
+                }
+
+                .omShades {
+                    padding: 30px;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 1em;
+                }
+
+
                 /*-------------MOBIL----------*/
 
                 @media screen and (min-width: 1px) and (max-width: 900px) and (orientation: portrait) {
@@ -1186,6 +1209,7 @@ https://flickity.metafizzy.co
                         max-width: 100%;
                         grid-template-columns: repeat(4, 1fr);
                         grid-gap: 20px;
+                        padding: 10px;
                     }
                     .interior1 {
                         grid-column: 1/5;
@@ -1264,6 +1288,7 @@ https://flickity.metafizzy.co
                     }
                     #billede_sortering {
                         grid-gap: 1%;
+                        padding: 10px;
                     }
 
                     #add_to_basket {
@@ -1279,6 +1304,7 @@ https://flickity.metafizzy.co
                         max-width: 100%;
                         grid-template-columns: repeat(4, 1fr);
                         grid-gap: 10px;
+                        margin: 10px;
                     }
                     #contact_info {
                         grid-column: 1/5;
@@ -1302,6 +1328,7 @@ https://flickity.metafizzy.co
                         display: grid;
                         grid-template-columns: repeat(4, 1fr);
                         grid-gap: 10px;
+                        padding: 10px;
                     }
                     .press1 {
                         grid-column: 1/3;
@@ -1333,7 +1360,7 @@ https://flickity.metafizzy.co
                     .produktbeskrivelser {
                         grid-column: 1/5;
                         grid-row: 2;
-                        padding: 35px;
+                        padding: 0 30px 30px;
                     }
                     #add_to_basket {
                         margin: 18px auto 10px;
@@ -1432,7 +1459,9 @@ https://flickity.metafizzy.co
                     }
                     #baggrundsvideo {
                         height: 230px;
+                        margin-top: 90px;
                     }
+
                     #see_our_design {
                         grid-template-columns: repeat(1, 1fr);
                         grid-gap: 10px;
@@ -1480,27 +1509,4 @@ https://flickity.metafizzy.co
                     #slider {
                         display: none;
                     }
-                }
-
-
-
-                /*---------Shades By Us-----------*/
-
-                #explainer {
-                    margin-top: 10px;
-                    max-width: 100%;
-                    margin: 0 auto;
-                }
-
-                #shadesVideo {
-                    position: relative;
-                    width: 100%;
-
-
-                }
-
-                .omShades {
-                    padding: 30px;
-                    font-family: 'Quicksand', sans-serif;
-                    font-size: 1em;
                 }
