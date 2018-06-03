@@ -1302,8 +1302,34 @@ https://flickity.metafizzy.co
 
   /* ----------DEALER-----------*/
 
+            #becomedealer{
+                  display: grid;
+                  grid-template-columns: repeat(4, 1fr);
+                grid-gap: 10px;
 
+            }
 
+            .signup{
+                grid-column: 1/5;
+                 grid-row: 2;
+                padding:20px;
+
+            }
+
+            .signup p{
+                 border-bottom: 1px solid;
+            }
+
+            .dealerkort{
+               grid-column: 2/4;
+                 grid-row: 1;
+            }
+
+            .signupdealer{
+                grid-column: 1/5;
+                 grid-row: 3;
+                width: 100%;
+            }
 
 
             @media screen and (min-width: 1px) and (max-width: 627px) and (orientation: landscape) {
