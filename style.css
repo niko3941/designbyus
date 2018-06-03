@@ -1459,6 +1459,10 @@ https://flickity.metafizzy.co
                         margin-top: 0em;
                         padding-top: 0em;
                     }
+
+                    #slider {
+                        display: none;
+                    }
                 }
 
 
