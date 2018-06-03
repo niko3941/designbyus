@@ -2,53 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>Products - Design By Us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>Products - Design By Us</title>
 </head>
 
 
 <body>
-    <header>
-        <div data-navigation></div>
-    </header>
-    <div id="container">
-        <div class="wrapper">
-            <div id="billede_sortering">
-                <a class="produkt_link" id="sorter_all"><img src="img/knapper/All%20Products.jpg" alt="Knap som viser alle produkter">
+	<header>
+		<div data-navigation></div>
+	</header>
+	<div id="container">
+		<div class="wrapper">
+			<div id="billede_sortering">
+				<a class="produkt_link" id="sorter_all"><img src="img/knapper/All%20Products.jpg" alt="Knap som viser alle produkter">
                     </a>
-                <a class="produkt_link" id="sorter_lightning"><img src="img/knapper/Lightning.jpg" alt="Knap som viser Lightning">
+				<a class="produkt_link" id="sorter_lightning"><img src="img/knapper/Lightning.jpg" alt="Knap som viser Lightning">
                     </a>
-                <a class="produkt_link" id="sorter_seating"><img src="img/knapper/Seating.jpg" alt="Knap som viser Seating"></a>
-                <a class="produkt_link" id="sorter_tables"><img src="img/knapper/Tables.jpg" alt="Knap som viser Tables"></a>
-                <a class="produkt_link" id="sorter_various"><img src="img/knapper/Various.jpg" alt="Knap som viser Various"></a>
-            </div>
+				<a class="produkt_link" id="sorter_seating"><img src="img/knapper/Seating.jpg" alt="Knap som viser Seating"></a>
+				<a class="produkt_link" id="sorter_tables"><img src="img/knapper/Tables.jpg" alt="Knap som viser Tables"></a>
+				<a class="produkt_link" id="sorter_various"><img src="img/knapper/Various.jpg" alt="Knap som viser Various"></a>
+			</div>
 
-            <section id="templateModtager"></section>
-            <template id="produktTemplate">
+			<section id="templateModtager"></section>
+			<template id="produktTemplate">
              <article id="indhold" class="indhold_produkter">
+               <img class="addFavoritKnap" src="img/icons_add_produkt-04.png" alt="add to favorites ikon">
                <a data-produktknap1 href=""><img class="produkter" src="" data-produktpic></a>
                <a data-produktknap2 href=""><h2 data-produktnavn></h2></a>
                <p data-produktpris></p>
                 <!--<p data-produktbeskrivelse></p>-->
                 <a id="knap_read_more" data-produktknap3 href=""><button>Take a look</button></a>
-                <a id="knap_favorites" data-produktknap4 href=""><button>Add to favorites</button></a>
+                <a id="knap_favorites" data-produktknap4 href=""><button>Add to basket</button></a>
              </article>
          </template>
-        </div>
-    </div>
+		</div>
+	</div>
 
 
-    <footer>
-        <div data-footer></div>
-    </footer>
+	<footer>
+		<div data-footer></div>
+	</footer>
 
-    <script src="navigationJS.js"></script>
-    <script src="produkterJS.js"></script>
+	<script src="navigationJS.js"></script>
+	<script src="produkterJS.js"></script>
 </body>
 
 </html>
