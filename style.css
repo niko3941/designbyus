@@ -1331,6 +1331,28 @@ https://flickity.metafizzy.co
                 width: 100%;
             }
 
+            /* ----------ABOUT-----------*/
+
+            #aboutdesignbyus{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                     padding: 10px;
+
+            }
+
+            #templateModtagerAbout{
+                display: grid;
+                     grid-template-columns: repeat(2, 1fr);
+                grid-gap: 10px;
+                padding: 10px;
+
+
+            }
+
+            .abouttext{
+                display: block;
+            }
+
 
             @media screen and (min-width: 1px) and (max-width: 627px) and (orientation: landscape) {
                 * {}
